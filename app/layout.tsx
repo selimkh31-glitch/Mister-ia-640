@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { Header, Footer } from "@/components/site-shell";
+import { site, absolute } from "@/lib/site";
+import "./globals.css";
+export const metadata:Metadata={metadataBase:new URL(site.origin),title:{default:"Mister IA 64 | Consultant IA au Pays Basque",template:"%s | Mister IA 64"},description:site.description,robots:{index:!site.review,follow:!site.review},icons:{icon:"/favicon.svg"},openGraph:{type:"website",locale:"fr_FR",siteName:site.name,title:"Mister IA 64",description:site.description},twitter:{card:"summary",title:"Mister IA 64",description:site.description}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="fr"><body><a className="skip" href="#main">Aller au contenu</a>{site.review&&<div className="review-banner">Version de présentation · Prise de contact non activée.</div>}<Header/>{children}<Footer/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'Organization','@id':absolute('/#organisation'),name:site.name,url:site.origin,description:site.description,areaServed:['Bayonne','Anglet','Biarritz','Pays Basque']})}}/></body></html>}

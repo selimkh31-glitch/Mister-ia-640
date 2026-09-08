@@ -1,0 +1,2 @@
+import { z } from "zod";
+export const leadSchema=z.object({name:z.string().trim().min(2).max(100),email:z.string().trim().email().max(200),company:z.string().trim().max(150).default(''),need:z.enum(['diagnostic','projet','formation','visibilite']),message:z.string().trim().min(10).max(3000),website:z.string().max(200).default(''),id:z.string().uuid(),source:z.string().max(200).regex(/^\/[a-z0-9/\-]*$/).default('/contact')});
