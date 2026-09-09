@@ -2,6 +2,22 @@
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 @utility scrollbar-thin { scrollbar-width: thin; }
+/* Additional offers extend the existing typography, palette and card system. */
+.offer-section{border-top:1px solid var(--border)}
+.offer-grid,.training-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.offer-card,.training-card{border:1px solid var(--border);border-radius:8px;padding:28px;display:flex;flex-direction:column;min-width:0}
+.offer-card{background:#f0f3eb}.offer-card:hover{background:#eaf0df;color:#163b35}
+.offer-card h3,.training-card h3{font-size:1.45rem;line-height:1.25;margin-top:24px}
+.offer-card p,.training-card>p{font-size:1rem;line-height:1.75;color:#536859;margin-top:16px}
+.offer-card>p{flex:1}.offer-card .card-link{font-size:.875rem}
+.training-section{border-top:1px solid var(--border)}.training-card{background:#fbfcf8;scroll-margin-top:115px}
+.training-card .card-top{margin-bottom:0}.training-card .text-link{margin-top:auto;padding-top:24px}
+.training-card .training-audience{font-size:.875rem;color:#536859;margin-block:18px}
+.training-exercise{background:#edf2e3;padding:18px;border-radius:6px;margin-top:auto;font-size:.95rem}
+.training-exercise strong{font-weight:600}.training-exercise p{margin-top:7px;line-height:1.7}
+.training-note{font-size:.95rem;color:#536859;margin-top:24px;max-width:800px}
+@media(max-width:1100px){.offer-grid,.training-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.offer-grid,.training-grid{grid-template-columns:1fr}.offer-card,.training-card{padding:25px}}
 @utility scrollbar-none { scrollbar-width: none; &::-webkit-scrollbar { display: none; } }
 @utility scrollbar-gutter-stable { scrollbar-gutter: stable; }
 :root{--background:#fbfcf8;--foreground:#163b35;--card:#fff;--card-foreground:#163b35;--popover:#fff;--popover-foreground:#163b35;--primary:#163b35;--primary-foreground:#fff;--secondary:#e4f57b;--secondary-foreground:#163b35;--muted:#edf1e8;--muted-foreground:#5b6860;--accent:#e4f57b;--accent-foreground:#163b35;--destructive:#ac3434;--border:#dce2d7;--input:#c2cec3;--ring:#507b38;--radius:.6rem}

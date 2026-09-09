@@ -1,5 +1,7 @@
 export type ContentPage = {path:string;kicker:string;title:string;lead:string;sections:{title:string;paragraphs:string[];items:string[]}[];faq:{q:string;a:string}[];links:string[];price:string|null;kind:string;sources:string[][]};
+import { additionalServices } from "./offers";
 export const pages:ContentPage[] = [
+  ...additionalServices,
   {
     "path": "/services/audit-ia",
     "kicker": "DIAGNOSTIC EXPRESS · 99 €",
@@ -143,14 +145,14 @@ export const pages:ContentPage[] = [
   },
   {
     "path": "/services/agents-ia",
-    "kicker": "ASSISTANTS & AGENTS IA",
-    "title": "Un assistant métier, avec des limites claires.",
-    "lead": "Répondre à partir de votre documentation, préparer une réponse ou qualifier une demande : un agent IA peut aider votre équipe, à condition de savoir quand s’arrêter et à qui passer la main.",
+    "kicker": "CHATBOTS & AGENTS VOCAUX · SUR DEVIS",
+    "title": "Un premier accueil utile. Une équipe qui garde la main.",
+    "lead": "Par écrit ou par la voix, un agent IA peut répondre aux questions courantes, qualifier une demande et préparer un rendez-vous. Nous construisons un périmètre précis, avec un relais vers votre équipe.",
     "sections": [
       {
-        "title": "Quel usage mérite un agent ?",
+        "title": "Un chatbot ou un agent vocal selon votre besoin",
         "paragraphs": [
-          "Un agent peut consulter des sources et utiliser certains outils pour accomplir une tâche délimitée. Un assistant interne peut rechercher dans une documentation validée ; un assistant commercial peut préparer la qualification d’une demande.",
+          "Un chatbot peut accueillir les visiteurs du site et répondre à partir de vos informations validées. Un agent vocal peut prendre en charge un premier échange téléphonique, recueillir le motif d’appel et orienter la demande. Il se présente comme un assistant automatisé, et un relais humain est prévu.",
           "Si une suite de règles déterministes suffit, une automatisation classique est souvent plus simple à maintenir. Nous évaluons le besoin d’IA avant de choisir l’architecture."
         ],
         "items": []
@@ -207,7 +209,7 @@ export const pages:ContentPage[] = [
     "path": "/services/formation-ia",
     "kicker": "FORMATION IA EN ENTREPRISE",
     "title": "Votre équipe sait faire. Et sait vérifier.",
-    "lead": "Des ateliers pratiques sur vos tâches réelles : rédiger, synthétiser, rechercher et préparer des documents avec l’IA, tout en conservant le jugement métier.",
+    "lead": "Prendre en main vos outils livrés, créer des images et vidéos marketing, construire un site avec l’IA ou automatiser une tâche : des ateliers sur votre métier pour savoir refaire, vérifier et faire évoluer.",
     "sections": [
       {
         "title": "Une formation autour de vos usages",
