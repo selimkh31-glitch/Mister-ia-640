@@ -725,7 +725,7 @@ export const pages:ContentPage[] = [
       {
         "title": "Sur ce site",
         "paragraphs": [
-          "L’estimateur fonctionne dans votre navigateur sans transmettre ses réponses. Aucun traceur publicitaire ni outil de mesure d’audience tiers n’est activé. La prise de contact est désactivée dans cette version de présentation."
+          "L’estimateur fonctionne dans votre navigateur sans transmettre ses réponses. Aucun traceur publicitaire ni outil de mesure d’audience tiers n’est activé. La prise de contact se fait sur WhatsApp ; le formulaire du site reste désactivé."
         ],
         "items": []
       }
@@ -905,13 +905,13 @@ export const pages:ContentPage[] = [
     "path": "/confidentialite",
     "kicker": "VERSION DE PRÉSENTATION / DONNÉES",
     "title": "Confidentialité et fonctionnement de cette version.",
-    "lead": "L’estimateur ne transmet pas vos réponses. La prise de contact est désactivée : aucune demande n’est enregistrée ou envoyée par le site.",
+    "lead": "L’estimateur ne transmet pas vos réponses. Le formulaire reste désactivé. Le bouton WhatsApp ouvre un service externe pour échanger directement avec Mister IA 64.",
     "sections": [
       {
         "title": "Données du formulaire",
         "paragraphs": [
-          "Cette version ne propose aucun champ de saisie pour les demandes commerciales. L’API refuse les soumissions sans les enregistrer ni envoyer d’email.",
-          "La collecte commerciale reste fermée tant que son service de réception, les informations juridiques et le contact pour exercer les droits ne sont pas validés."
+          "Cette version ne propose aucun champ de saisie pour les demandes commerciales. L’API refuse les soumissions sans les enregistrer ni envoyer d’email. Un clic sur WhatsApp ouvre le service externe ; les messages que vous choisissez ensuite d’envoyer y sont traités pour répondre à votre demande. Évitez d’y transmettre des documents sensibles.",
+          "Le formulaire de collecte commerciale reste fermé. Pour une question concernant vos échanges avec Mister IA 64, vous pouvez nous joindre au +33 6 01 99 80 10. Le fonctionnement de WhatsApp dépend aussi de ses propres conditions et paramètres de confidentialité."
         ],
         "items": []
       },
