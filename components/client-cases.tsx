@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Link from "@/components/site-link";
-import { WhatsAppButton } from "@/components/whatsapp";
 
 export function MarketplaceLogos() {
   return <div className="marketplace-logos" aria-label="Plateformes concernées par la migration"><Image src="/logos/rakuten.svg" alt="Rakuten" width={105} height={32}/><span aria-hidden="true">→</span><span>Boutique indépendante</span><span aria-hidden="true">+</span><Image src="/logos/amazon.svg" alt="Amazon" width={96} height={32}/></div>;
@@ -19,5 +18,5 @@ const cases = [
 ];
 
 export function ClientCases() {
-  return <section className="wrap section client-cases" id="realisations" aria-labelledby="cases-title"><div className="section-heading"><div><p className="eyebrow">DÉJÀ MIS EN PLACE</p><h2 id="cases-title">Quatre situations.<br/>Du travail qui avance.</h2></div><p>Un catalogue, des appels, des publicités,<br/>des démarches : l’IA part du besoin réel.</p></div><div className="client-case-grid">{cases.map(c=><article className="client-case-card" id={c.id} key={c.id}><p className="eyebrow">{c.category}</p><p className="client-name">{c.name}</p><h3>{c.title}</h3><div className="client-result"><strong>{c.metric}</strong><p>{c.result}</p></div><p>{c.outcome}</p><details><summary>Le besoin et la solution</summary><h4>Avant</h4><p>{c.problem}</p><h4>Ce que nous avons mis en place</h4><p>{c.solution}</p>{c.id==='bela-lugosi'&&<MarketplaceLogos/>}</details><Link className="text-link" href={c.link}>{c.cta}<ArrowUpRight size={17}/></Link></article>)}</div><div className="cases-contact"><p>Vous reconnaissez une situation de votre entreprise ?</p><WhatsAppButton/></div></section>;
+  return <section className="wrap section client-cases" id="realisations" aria-labelledby="cases-title"><div className="section-heading"><div><p className="eyebrow">01 / NOS RÉALISATIONS</p><h2 id="cases-title">Quatre situations.<br/>Du travail qui avance.</h2></div><p>Un catalogue, des appels, des publicités,<br/>des démarches : l’IA part du besoin réel.</p></div><div className="client-case-grid">{cases.map(c=><article className="client-case-card" id={c.id} key={c.id}><p className="eyebrow">{c.category}</p><p className="client-name">{c.name}</p><h3>{c.title}</h3><div className="client-result"><strong>{c.metric}</strong><p>{c.result}</p></div><details><summary>Découvrir le projet</summary><h4>Avant</h4><p>{c.problem}</p><h4>Ce que nous avons mis en place</h4><p>{c.solution}</p><h4>Ce que cela change</h4><p>{c.outcome}</p>{c.id==='bela-lugosi'&&<MarketplaceLogos/>}</details><Link className="text-link" href={c.link}>{c.cta}<ArrowUpRight size={17}/></Link></article>)}</div></section>;
 }
