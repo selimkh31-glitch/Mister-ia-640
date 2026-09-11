@@ -16,8 +16,17 @@ export const searchTitles: Record<string, string> = {
   "/solutions/automatiser-devis": "Automatiser ses devis : préparation et validation",
   "/solutions/automatiser-relances": "Automatiser les relances de devis et prospects",
   "/solutions/automatiser-emails": "Automatiser le tri des emails et préparer les réponses",
-  "/pays-basque": "Consultant IA au Pays Basque : Bayonne, Anglet, Biarritz",
+  "/pays-basque": "Sites web et accompagnement IA au Pays Basque",
   "/a-propos": "Selimkhan, consultant IA chez Mister IA 64",
   "/methode": "Notre méthode : audit IA, pilote et automatisation",
+};
+export const searchDescriptions: Record<string, string> = {
+  "/": "Un accompagnement humain au Pays Basque pour votre site internet, votre SEO local et vos outils IA. Avancez avec Selimkhan, à votre rythme.",
+  "/services/creation-site-web": "Votre site vitrine dès 299 € HT : 10 pages, SEO local, blog et formation. Un accompagnement à Saint-Jean-de-Luz et au Pays Basque, de l’idée à la prise en main.",
+  "/services/seo-geo": "SEO local au Pays Basque : audit du site, contenus, fiche Google et suivi des demandes. Un accompagnement clair pour rendre votre activité plus visible.",
+  "/services/automatisation-ia": "Reliez vos emails, devis et logiciels pour réduire les ressaisies. Automatisation et intégrations IA au Pays Basque, avec votre équipe et vos outils.",
+  "/services/formation-ia": "Formation et accompagnement IA pour dirigeants et équipes au Pays Basque. Outils livrés, images, vidéos, sites web : apprenez sur vos propres usages.",
+  "/pays-basque": "Sites internet, SEO local et accompagnement IA de Saint-Jean-de-Luz au BAB, Ciboure et Hendaye. Des besoins concrets, un interlocuteur et un périmètre clair.",
+  "/a-propos": "Découvrez Selimkhan et l’approche artisanale de Mister IA 64 : écoute, accompagnement et prise en main des outils pour les petites entreprises du Pays Basque.",
 };
 export const hiddenFromSearch = new Set(["/mentions-legales", "/confidentialite"]);

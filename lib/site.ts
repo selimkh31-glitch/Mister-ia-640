@@ -10,6 +10,7 @@ export const site = {
  name: "Mister IA 64",
  origin,
  review: !production,
- description: "Audit IA personnalisé à 99 €, automatisation et formation pour les indépendants, TPE et PME du Pays Basque. Bayonne, Anglet, Biarritz et à distance.",
+ description: "Sites internet, SEO local et accompagnement IA pour les dirigeants et leurs équipes au Pays Basque. Un interlocuteur humain, des outils adaptés à votre métier.",
 };
+export const serviceAreas = ['Saint-Jean-de-Luz', 'Bayonne', 'Biarritz', 'Anglet', 'Hendaye', 'Ciboure', 'Pays Basque'];
 export const absolute = (path: string) => new URL(path, site.origin).href;

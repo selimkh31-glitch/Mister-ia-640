@@ -6,10 +6,12 @@
     "node": "22.x"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/dev.mjs",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
