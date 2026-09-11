@@ -1,7 +1,9 @@
 export type ContentPage = {path:string;kicker:string;title:string;lead:string;sections:{title:string;paragraphs:string[];items:string[]}[];faq:{q:string;a:string}[];links:string[];price:string|null;kind:string;sources:string[][]};
 import { additionalServices } from "./offers";
 import { acquisitionGuides } from "./acquisition-guides";
+import { editorialArticles } from "./editorial-articles";
 export const pages:ContentPage[] = [
+  ...editorialArticles,
   ...acquisitionGuides,
   ...additionalServices,
   {

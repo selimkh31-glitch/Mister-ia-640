@@ -2,7 +2,7 @@
 export const searchTitles: Record<string, string> = {
   "/services": "Services IA pour TPE et PME au Pays Basque",
   "/solutions": "Automatiser devis, relances et emails en entreprise",
-  "/guides": "Guides IA et automatisation pour dirigeants de PME",
+  "/guides": "Guides IA et cas clients pour dirigeants de PME",
   "/services/audit-ia": "Audit IA personnalisé pour PME : diagnostic à 99 €",
   "/services/automatisation-ia": "Automatisation IA pour TPE et PME au Pays Basque",
   "/services/agents-ia": "Assistant vocal IA et chatbot pour entreprises",

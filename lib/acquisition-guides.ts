@@ -31,13 +31,17 @@ export const acquisitionGuides: ContentPage[] = [
   {
     path: "/guides/assistant-vocal-ia-artisan",
     kicker: "GUIDE ARTISAN · APPELS & RENDEZ-VOUS",
-    title: "Assistant vocal IA pour artisan : que peut-il prendre en charge ?",
+    title: "Artisan : vous ratez des appels sur chantier, quelles solutions ?",
     lead: "Un assistant vocal peut accueillir un appel, qualifier une demande et proposer une visite de chantier. Son utilité dépend surtout du routage téléphonique, de vos règles et de votre agenda.",
     kind: "guide", price: null, sources: [],
     sections: [
       { title: "Le besoin : accueillir les demandes pendant les interventions", paragraphs: [
         "Lorsque vous êtes sur chantier, répondre immédiatement n’est pas toujours possible. L’objectif d’un assistant est de recueillir une demande exploitable : qui appelle, pour quel travail, à quelle adresse et avec quelles disponibilités. Il doit aussi préciser ce qui sera confirmé par vous.",
         "Dans le cas de la société AMINA, le dirigeant nous a décrit environ dix appels manqués par semaine. Nous avons mis en place un assistant vocal qui qualifie les demandes et organise les visites selon son calendrier. Ce volume décrit sa situation de départ ; il ne constitue pas une prévision de résultat pour un autre artisan."
+      ], items: [] },
+      { title: "Répondeur, créneaux de rappel ou assistant : choisir selon le besoin", paragraphs: [
+        "Si les appels manqués sont peu nombreux, commencez par un message d’accueil précis et des créneaux de rappel que vous pouvez tenir. Demandez au prospect de laisser son nom, sa commune et la nature du projet : ces informations facilitent le retour d’appel.",
+        "Si vous devez dialoguer immédiatement avec chaque personne, examinez la possibilité d’un accueil par votre équipe ou d’une permanence. Un assistant vocal est une autre piste lorsque les premières questions et la prise de rendez-vous suivent des règles claires. Le choix dépend du volume, de la complexité des demandes et de la personne disponible pour reprendre les cas particuliers."
       ], items: [] },
       { title: "La connexion téléphonique se vérifie avant le scénario", paragraphs: [
         "Un assistant ne répare pas la couverture mobile. Il faut vérifier comment les appels lui parviennent : numéro dédié, standard ou renvoi géré par votre opérateur. Le fonctionnement quand le téléphone est éteint, occupé ou hors réseau doit être testé dans votre configuration.",
@@ -53,7 +57,7 @@ export const acquisitionGuides: ContentPage[] = [
       ], items: [] }
     ],
     faq: [{q:"Peut-il prendre rendez-vous directement ?",a:"Oui si la connexion à l’agenda et les règles de disponibilité le permettent. Sinon, il peut recueillir les créneaux souhaités pour une confirmation humaine."},{q:"Peut-il remplacer toutes les conversations ?",a:"Non. Les demandes inhabituelles, les engagements commerciaux et les situations qui nécessitent votre jugement doivent être orientés vers vous."}],
-    links: ["/services/agents-ia", "/services/gestion-plannings", "/#amina", "/services/audit-ia"]
+    links: ["/guides/cas-client-amina", "/services/agents-ia", "/services/gestion-plannings", "/#amina", "/services/audit-ia"]
   },
   {
     path: "/guides/migration-catalogue-ecommerce",
@@ -80,6 +84,6 @@ export const acquisitionGuides: ContentPage[] = [
       ], items: ["Comparer les nombres de références et les erreurs d’import.", "Contrôler les prix et les images sur un lot représentatif.", "Prévoir une reprise après erreur et la conservation des exports.", "Vérifier les exigences propres à chaque canal de vente."] }
     ],
     faq: [{q:"Peut-on importer automatiquement sur Amazon ?",a:"Cela dépend du compte, des catégories, des identifiants produits et des exigences de publication. Ces conditions doivent être vérifiées pour votre catalogue."},{q:"L’audit à 99 € comprend-il la migration ?",a:"Non. Il peut cadrer un processus prioritaire lié au catalogue. L’extraction, la nouvelle boutique, les imports et la synchronisation éventuelle font l’objet d’un devis distinct."}],
-    links: ["/services/automatisation-ia", "/#bela-lugosi", "/services/audit-ia"]
+    links: ["/guides/cas-client-bela-lugosi", "/services/automatisation-ia", "/#bela-lugosi", "/services/audit-ia"]
   }
 ];
