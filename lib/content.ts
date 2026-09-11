@@ -81,7 +81,7 @@ export const pages:ContentPage[] = [
   {
     "path": "/services/automatisation-ia",
     "kicker": "AUTOMATISATION MÉTIER",
-    "title": "Vos outils se parlent. Votre travail avance.",
+    "title": "Automatisation et intégrations IA : vos outils travaillent ensemble.",
     "lead": "Nous relions vos emails, documents et outils commerciaux pour réduire les ressaisies et les tâches répétitives. Chaque système suit vos règles et laisse une place claire à la validation humaine.",
     "sections": [
       {
@@ -149,6 +149,7 @@ export const pages:ContentPage[] = [
     "kind": "service",
     "sources": []
   },
+
   {
     "path": "/services/agents-ia",
     "kicker": "CHATBOTS & AGENTS VOCAUX · SUR DEVIS",
@@ -214,7 +215,7 @@ export const pages:ContentPage[] = [
   {
     "path": "/services/formation-ia",
     "kicker": "FORMATION IA EN ENTREPRISE",
-    "title": "Votre équipe sait faire. Et sait vérifier.",
+    "title": "Formation IA : accompagner votre équipe jusqu’à la prise en main.",
     "lead": "Prendre en main vos outils livrés, créer des images et vidéos marketing, construire un site avec l’IA ou automatiser une tâche : des ateliers sur votre métier pour savoir refaire, vérifier et faire évoluer.",
     "sections": [
       {
@@ -274,11 +275,12 @@ export const pages:ContentPage[] = [
     "kind": "service",
     "sources": []
   },
+
   {
     "path": "/services/seo-geo",
     "kicker": "VISIBILITÉ GOOGLE & IA",
-    "title": "Être trouvé. Être compris. Mériter la citation.",
-    "lead": "Nous travaillons votre présence dans les moteurs de recherche et les réponses génératives : un site accessible, une offre claire, des contenus utiles et des informations vérifiables.",
+    "title": "SEO local au Pays Basque : être trouvé et donner envie de vous contacter.",
+    "lead": "Vos clients cherchent une prestation près de chez eux. Nous vous accompagnons pour clarifier votre site, travailler votre visibilité locale et relier les visites à des demandes utiles.",
     "sections": [
       {
         "title": "SEO et GEO : une base commune",
@@ -287,6 +289,18 @@ export const pages:ContentPage[] = [
           "Google indique qu’aucun balisage spécial n’est nécessaire pour ses fonctionnalités IA. Une page techniquement éligible n’a toutefois aucune garantie d’être indexée ou citée."
         ],
         "items": []
+      },
+      {
+        "title": "Votre site et votre fiche Google racontent-ils la même activité ?",
+        "paragraphs": [
+          "Nous vérifions que vos prestations, votre numéro et votre zone d’intervention sont cohérents entre le site et vos profils publics. Si vous disposez d’une fiche Google Business Profile éligible, son contenu et son lien vers le site font partie des points à examiner avec vous.",
+          "Une page par besoin, des réalisations autorisées et des réponses précises valent mieux qu’une série de pages où seul le nom de ville change. Nous choisissons les contenus selon vos services et les questions de vos clients, puis observons les impressions, clics et demandes lorsque les accès de mesure sont disponibles."
+        ],
+        "items": [
+          "Contrôle technique : indexation, canonical, sitemap et liens.",
+          "Contenus : prestations, zone réelle, questions et preuves.",
+          "Accompagnement : priorités, corrections et suivi définis au devis."
+        ]
       },
       {
         "title": "L’audit : établir un point de départ",
@@ -329,6 +343,7 @@ export const pages:ContentPage[] = [
       }
     ],
     "links": [
+      "/services/creation-site-web",
       "/guides/seo-geo-differences",
       "/pays-basque",
       "/contact"
@@ -342,6 +357,7 @@ export const pages:ContentPage[] = [
       ]
     ]
   },
+
   {
     "path": "/solutions/automatiser-devis",
     "kicker": "SOLUTION / DEVIS",
@@ -533,72 +549,73 @@ export const pages:ContentPage[] = [
   },
   {
     "path": "/pays-basque",
-    "kicker": "BAYONNE · ANGLET · BIARRITZ",
-    "title": "Consultant IA au Pays Basque : audit, automatisation et formation.",
-    "lead": "Mister IA 64 accompagne les TPE, PME et indépendants du BAB sur leurs processus, leurs outils et leurs usages IA. Le travail peut associer observation dans vos locaux et suivi à distance.",
+    "kicker": "PAYS BASQUE · ACCOMPAGNEMENT DE PROXIMITÉ",
+    "title": "Sites internet et accompagnement IA au Pays Basque.",
+    "lead": "Dirigeant, artisan ou commerçant : vous avez besoin d’être trouvé et de garder du temps pour vos clients. Selimkhan vous accompagne sur votre site, votre visibilité locale et les outils de votre équipe.",
     "sections": [
       {
-        "title": "Bayonne, Anglet, Biarritz et la Côte Basque",
+        "title": "Saint-Jean-de-Luz, Ciboure et Hendaye : être trouvé dans votre zone réelle",
         "paragraphs": [
-          "Bayonne, Anglet et Biarritz constituent notre périmètre commercial prioritaire. Les interventions à Saint-Jean-de-Luz, Hendaye et ailleurs sur la Côte Basque sont cadrées selon le projet et les déplacements nécessaires.",
-          "Nous travaillons dans vos locaux lorsque l’observation du processus le nécessite, ou à distance pour le cadrage et le suivi. Le lieu de rendez-vous, les éventuels frais et les modalités sont convenus avant la mission."
+          "Pour une activité de proximité, un site utile précise ce que vous faites, où vous intervenez et comment vous joindre. Nous préparons avec vous les informations que vos clients cherchent avant de vous appeler : prestations, exemples de travail, modalités de rendez-vous et zone de déplacement.",
+          "Si votre activité accueille une clientèle de passage, les périodes d’ouverture et les demandes dans plusieurs langues peuvent faire partie du cadrage. Ce sont des besoins à vérifier avec vous, pas des fonctionnalités à ajouter systématiquement."
+        ],
+        "items": [
+          "Site vitrine : 10 pages à partir de 299 € HT, SEO local, blog et formation inclus.",
+          "Référencement local : travailler vos pages et la cohérence de vos informations publiques.",
+          "Un contact accessible sur mobile, sans obliger le visiteur à chercher votre numéro."
+        ]
+      },
+      {
+        "title": "Bayonne, Anglet et Biarritz : relier visibilité et suivi des demandes",
+        "paragraphs": [
+          "Sur le BAB, votre site peut être le point de départ d’un parcours qui continue par un appel, un devis ou un rendez-vous. Le travail ne s’arrête donc pas à la mise en ligne : nous regardons aussi comment la demande arrive à la bonne personne et comment elle est suivie.",
+          "Pour votre équipe, une automatisation peut préparer une fiche client, regrouper les pièces d’un devis ou rappeler une prochaine action. Le choix dépend de vos logiciels et du temps réellement consacré à ces tâches."
         ],
         "items": []
       },
       {
-        "title": "Des situations de travail à explorer",
+        "title": "Présentiel, à distance : choisir le format qui sert le projet",
         "paragraphs": [
-          "Pour une entreprise artisanale, le premier sujet peut être la préparation des devis et leur suivi. Pour une activité d’accueil ou de tourisme, ce peut être le tri des demandes et l’accès aux réponses validées. Pour une entreprise de services, la ressaisie entre messagerie, documents et CRM mérite souvent d’être observée.",
-          "Lorsque le besoin porte sur la visibilité plutôt que sur un processus interne, nous travaillons aussi le référencement et la présence dans les réponses génératives, à partir d’une offre claire et de contenus vérifiables.",
-          "Le choix dépend de votre volume de demandes, des outils déjà utilisés et du temps passé sur chaque étape. Nous examinons un cas concret avec vous avant de recommander une solution."
+          "Une première conversation permet de préciser votre activité, votre ville et votre priorité. Un site ou un travail de contenu peut avancer à distance ; observer une tâche avec l’équipe peut justifier un rendez-vous dans vos locaux.",
+          "Le lieu, les déplacements éventuels et les modalités d’accompagnement sont convenus au devis. Pour le Sud Landes, nous vérifions ensemble la pertinence d’une intervention sur place ou d’un accompagnement à distance. Aucune adresse d’agence ni permanence locale n’est annoncée dans ces communes."
         ],
         "items": []
       },
       {
-        "title": "Comment organiser une intervention",
+        "title": "Que préparer pour notre premier échange ?",
         "paragraphs": [
-          "Le premier échange délimite le besoin, les personnes à réunir et les exemples à préparer. Si l’observation sur place apporte de la valeur, le rendez-vous se déroule avec la personne qui connaît le processus.",
-          "Le diagnostic à 99 € concerne un processus. L’automatisation IA, la visibilité SEO/GEO, la formation et le suivi font ensuite l’objet d’un périmètre séparé. Vous pouvez également commencer par notre estimateur gratuit, sans partager de documents internes."
+          "Pour un site : votre activité, votre zone réelle, les prestations à présenter et les contenus dont vous disposez. Pour le référencement : l’adresse de votre site et, si vous en avez une, votre fiche Google Business Profile. Ne transmettez pas vos mots de passe.",
+          "Pour une automatisation ou une formation : un exemple anonymisé de la tâche, les outils utilisés et les personnes concernées. Nous pouvons alors définir une première étape adaptée à votre budget."
         ],
-        "items": []
-      },
-      {
-        "title": "Un territoire avec un écosystème numérique",
-        "paragraphs": [
-          "La CCI Bayonne Pays Basque propose des parcours de formation via EMISA ; Pays Basque Digital anime également des initiatives autour du numérique. Ces ressources peuvent compléter votre réflexion. Leur mention ne signifie pas que Mister IA 64 en est membre, partenaire ou organisme labellisé."
-        ],
-        "items": []
+        "items": [
+          "Créer votre présence en ligne : l’offre site vitrine est accessible sans audit préalable.",
+          "Clarifier une tâche répétitive : l’audit personnalisé à 99 € porte sur un processus.",
+          "Accompagner votre équipe : programme de formation et suivi définis ensemble."
+        ]
       }
     ],
     "faq": [
       {
-        "q": "Intervenez-vous dans nos locaux ?",
-        "a": "Oui, selon le besoin et le périmètre convenu. Un échange initial permet de vérifier la zone, la disponibilité et les éventuels frais."
+        "q": "Avez-vous une agence dans chaque ville ?",
+        "a": "Non. Les villes citées décrivent une zone d’intervention. Vous échangez avec Selimkhan ; le lieu et les modalités d’un éventuel rendez-vous sont définis ensemble."
       },
       {
-        "q": "Peut-on commencer à distance ?",
-        "a": "Oui. Préparez un exemple anonymisé de la tâche, les étapes suivies et les outils utilisés. Nous précisons ensemble si une observation dans vos locaux est utile."
+        "q": "Pouvez-vous travailler sur mon site existant ?",
+        "a": "Oui, après examen de sa structure, des accès disponibles et du besoin. Il n’est pas nécessaire de tout refaire si des améliorations ciblées suffisent."
       }
     ],
     "links": [
-      "/services/audit-ia",
-      "/services/automatisation-ia",
+      "/services/creation-site-web",
       "/services/seo-geo",
-      "/services/formation-ia"
+      "/services/automatisation-ia",
+      "/services/formation-ia",
+      "/contact"
     ],
     "price": null,
     "kind": "page",
-    "sources": [
-      [
-        "EMISA — CCI Bayonne Pays Basque",
-        "https://www.emisa.fr/"
-      ],
-      [
-        "Pays Basque Digital — formation IA",
-        "https://www.pays-basque-digital.fr/formation-ia-skill-up-ia/"
-      ]
-    ]
+    "sources": []
   },
+
   {
     "path": "/methode",
     "kicker": "LA MÉTHODE MISTER IA 64",
@@ -656,13 +673,13 @@ export const pages:ContentPage[] = [
     "path": "/a-propos",
     "kicker": "À PROPOS",
     "title": "La technologie au service du travail bien fait.",
-    "lead": "Mister IA 64 est un projet de conseil et d’implémentation IA pour les entreprises du Pays Basque, porté par Selimkhan. Le point de départ : comprendre le métier avant de choisir l’outil.",
+    "lead": "Je suis Selimkhan, votre interlocuteur chez Mister IA 64. J’accompagne les dirigeants et leurs équipes au Pays Basque pour simplifier leur quotidien et rendre leur savoir-faire plus visible.",
     "sections": [
       {
         "title": "Pourquoi « Mister IA 64 » ?",
         "paragraphs": [
-          "Mister IA 64 défend une approche simple, accessible et ancrée dans le territoire : partir de votre métier, puis construire ce qui vous aide vraiment. Nous proposons du conseil aux entreprises, sans prestation de santé.",
-          "Notre activité associe diagnostic de processus, automatisation, assistants métier, formation et visibilité dans les moteurs de recherche. Chaque mission est cadrée selon son besoin réel."
+          "Mon approche est celle d’un artisan du numérique : comprendre votre métier, choisir les outils utiles, construire avec vous et vous expliquer comment les prendre en main.",
+          "Création de site internet, SEO local, automatisation ou formation IA : l’accompagnement part de votre besoin et de vos moyens, pas d’un catalogue de logiciels."
         ],
         "items": []
       },
@@ -679,16 +696,20 @@ export const pages:ContentPage[] = [
         ]
       },
       {
-        "title": "Les preuves se construisent sur le terrain",
+        "title": "Des réalisations à découvrir, pas seulement des promesses",
         "paragraphs": [
-          "La marque démarre. Aucun portefeuille client, témoignage, label ou résultat chiffré n’est présenté sans justificatif. Les exemples du site illustrent des scénarios possibles, pas des missions accomplies.",
-          "Les futurs cas clients documenteront la situation initiale, la solution, la période d’observation et les limites de la mesure, avec l’accord des personnes concernées."
+          "Le site présente notamment la migration du catalogue de Bela Lugosi, l’assistant vocal d’AMINA, la préparation de contenus pour NOXVAULT et l’outil d’aide aux démarches réalisé pour les sinistrés de Pomas.",
+          "Chaque récit distingue le problème de départ, le système mis en place et les résultats décrits. Les estimations propres à un client ne deviennent pas une promesse pour votre entreprise."
         ],
         "items": []
       }
     ],
     "faq": [],
     "links": [
+      "/guides/cas-client-bela-lugosi",
+      "/guides/cas-client-amina",
+      "/guides/cas-client-noxvault",
+      "/guides/cas-client-pomas",
       "/methode",
       "/pays-basque",
       "/contact"
@@ -697,6 +718,7 @@ export const pages:ContentPage[] = [
     "kind": "page",
     "sources": []
   },
+
   {
     "path": "/securite",
     "kicker": "DONNÉES & RESPONSABILITÉS",

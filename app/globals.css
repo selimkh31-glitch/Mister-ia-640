@@ -141,3 +141,20 @@
 .human-intro .text-link{margin-top:24px}.human-promises{background:#edf2e3;border-radius:10px;padding:32px}
 .human-promises h3{font-size:1.6rem;line-height:1.25}.human-promises ul{padding-left:22px;margin-top:24px}.human-promises li{margin-bottom:12px}
 @media(max-width:760px){.human-intro{grid-template-columns:1fr;gap:28px}.human-day,.human-promises{padding:24px}.human-day h2{font-size:1.7rem}}
+
+/* Shared local context and restrained editorial imagery; no hero download. */
+.local-service-links{border-top:1px solid var(--border);padding-block:48px;margin-top:32px}
+.local-service-links h2{font-size:clamp(1.8rem,3vw,2.6rem);margin-block:16px 22px}
+.local-service-links p:not(.eyebrow){max-width:800px;color:#536859;line-height:1.8}
+.local-service-links nav{display:flex;flex-wrap:wrap;gap:16px 28px;margin-top:24px}
+.local-service-links a,.article p a{font-size:1rem;text-decoration:underline;text-underline-offset:4px}
+.accompaniment-visual{margin:30px 0;max-width:560px}
+.accompaniment-visual img{display:block;width:100%;height:auto;aspect-ratio:3/2;border-radius:10px}
+.accompaniment-visual figcaption{font-size:.875rem;line-height:1.6;color:#536859;margin-top:12px}
+.hero-copy,.page-body>*,.hero>*,.website-offer-inner>*,.funnel-offer>*{min-width:0}
+.page-hero h1,.hero h1,.button,.sidebox a{overflow-wrap:break-word}
+.eyebrow,.button.small,.breadcrumbs,.footer-grid>div:not(:first-child){font-size:.875rem}
+.sidebox p,.sidebox>a,.hub-card p,.contact-aside p,.form-box .form-note{font-size:1rem}
+@media(max-width:1100px){.desktop-nav,.header-cta{display:none}.mobile-menu{display:block}.mobile-menu summary{cursor:pointer;min-height:44px;padding:10px}.mobile-menu nav{position:absolute;right:24px;top:100%;display:flex;flex-direction:column;gap:16px;background:var(--background);padding:24px;border:1px solid var(--border);box-shadow:0 12px 20px #163b3510;max-height:80vh;overflow:auto;width:min(340px,calc(100vw - 48px))}}
+@media(max-width:760px){.local-service-links{padding-block:32px}.local-service-links nav{flex-direction:column;align-items:flex-start}.button{max-width:100%;white-space:normal;text-align:center}.page-hero h1{font-size:clamp(2.1rem,9vw,3.4rem)}.accompaniment-visual{max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.problem-card:hover{transform:none}}
