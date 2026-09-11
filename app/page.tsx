@@ -37,7 +37,7 @@ export default function Home() {
         { Icon: PhoneMissed, title: "Les demandes arrivent au mauvais moment.", text: "Un appel manqué pendant une intervention. Une relance oubliée. Un prospect qui attend une réponse." },
         { Icon: Clock3, title: "Votre développement attend.", text: "La communication, le suivi client ou les nouveaux projets passent après les urgences du jour." }
       ].map(({Icon,title,text})=><article className="problem-card" key={title}><Icon size={25}/><h3>{title}</h3><p>{text}</p></article>)}</div>
-      <p className="funnel-bridge">La première question : <strong>quelle tâche mérite d’être automatisée chez vous, avec vos contraintes ?</strong></p>
+      <p className="funnel-bridge">La première question : <strong>quelle tâche mérite une <Link href="/services/automatisation-ia">automatisation IA</Link> chez vous, avec vos contraintes ?</strong></p>
     </section>
     <ClientCases auditFocus/>
     <section className="dark-section" id="audit" aria-labelledby="audit-title"><div className="wrap section funnel-offer">
@@ -56,6 +56,17 @@ export default function Home() {
     ].map(([number,title,text])=><article key={number}><span className="eyebrow">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
     <section className="wrap section funnel-faq" aria-labelledby="faq-title"><div className="section-heading"><div><p className="eyebrow">AVANT DE VOUS LANCER</p><h2 id="faq-title">Vos questions,<br/>des réponses claires.</h2></div></div>{questions.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
     <section className="wrap funnel-final" aria-labelledby="final-title"><div className="cta-panel"><div><p className="eyebrow">COMMENÇONS PAR VOTRE ENTREPRISE</p><h2 id="final-title">Quelle tâche aimeriez-vous<br/>ne plus refaire demain ?</h2><p>Parlez-nous de votre activité. Nous cadrerons votre audit personnalisé à 99 €.</p></div><div><AuditButton/><p className="funnel-reassurance">Vous complétez le message avant de l’envoyer.</p></div></div></section>
-    <section className="wrap funnel-explore" aria-label="Services et formations"><details><summary>Explorer nos services et formations</summary><p>Automatisation, assistants vocaux, marketing, plannings, facturation, visibilité et formation : découvrez les interventions possibles après le diagnostic.</p><div><Link href="/services">Tous les services <ArrowUpRight size={16}/></Link><Link href="/services/formation-ia">Outils livrés, images et vidéos, sites web : les formations <ArrowUpRight size={16}/></Link><Link href="/pays-basque">Au Pays Basque et à distance <ArrowUpRight size={16}/></Link></div></details></section>
+    <section className="wrap funnel-explore" aria-labelledby="explore-title">
+      <p className="eyebrow">APRÈS LE DIAGNOSTIC</p>
+      <h2 id="explore-title" className="funnel-explore-title">Les interventions possibles</h2>
+      <p>Une fois les priorités claires, nous pouvons relier vos outils, clarifier votre présence en ligne ou former l’équipe.</p>
+      <div className="funnel-explore-links">
+        <Link href="/services/audit-ia">Audit IA — 99 € <ArrowUpRight size={16}/></Link>
+        <Link href="/services/automatisation-ia">Automatisation IA <ArrowUpRight size={16}/></Link>
+        <Link href="/services/seo-geo">SEO/GEO <ArrowUpRight size={16}/></Link>
+        <Link href="/services/formation-ia">Formation IA <ArrowUpRight size={16}/></Link>
+        <Link href="/pays-basque">Au Pays Basque et à distance <ArrowUpRight size={16}/></Link>
+      </div>
+    </section>
   </main>;
 }
