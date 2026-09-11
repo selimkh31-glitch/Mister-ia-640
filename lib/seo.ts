@@ -1,5 +1,6 @@
 // Search intent titles are distinct from the editorial page headlines.
 export const searchTitles: Record<string, string> = {
+  "/services/creation-site-web": "Site web au Pays Basque dès 299 € HT : SEO et formation",
   "/services": "Services IA pour TPE et PME au Pays Basque",
   "/solutions": "Automatiser devis, relances et emails en entreprise",
   "/guides": "Guides IA et cas clients pour dirigeants de PME",

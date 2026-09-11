@@ -114,3 +114,19 @@
 .article-platforms{display:flex;align-items:center;gap:28px;margin-top:24px}
 .article-platforms img{height:32px;width:auto}
 @media(max-width:760px){.article-visual{padding:18px}.article .article-visual ol{grid-template-columns:1fr}.article .article-visual li{padding:16px}.desktop-nav{gap:16px}}
+
+/* Two entry offers: website launch and process audit. */
+.entry-offer-actions{gap:14px}.entry-offer-actions .entry-secondary{background:transparent;color:#163b35}
+.entry-offer-actions .entry-secondary:hover{background:#edf2e3}
+.website-offer{background:#edf2e3;border-block:1px solid var(--border)}
+.website-offer-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.website-offer h2{margin-top:20px}.website-offer h3{font-size:1.3rem;margin-block:26px 12px}
+.website-offer-inner>div>p:not(.eyebrow):not(.website-price){font-size:1rem;line-height:1.8;color:#536859;margin-top:20px}
+.website-offer .text-link{margin-top:24px}
+.website-price-card{background:#fbfcf8;padding:32px;border:1px solid #cbd7bd;border-radius:10px}
+.website-price{font-size:3.8rem;line-height:1.2;letter-spacing:-.05em;margin-top:18px}
+.website-price>span{display:block;font-size:1rem;letter-spacing:0;margin-bottom:7px}.website-price small{font-size:1.3rem;letter-spacing:0}
+.website-price-card ul{padding:0;list-style:none;display:grid;gap:15px;margin-block:25px}
+.website-price-card li{display:flex;align-items:flex-start;gap:12px}.website-price-card li svg{margin-top:4px}
+.website-price-card .button{width:100%}.website-price-card .website-note{font-size:.875rem!important;line-height:1.6!important;margin-top:18px}
+@media(max-width:760px){.website-offer-inner{grid-template-columns:1fr;gap:30px}.website-price-card{padding:24px}.entry-offer-actions{align-items:stretch;flex-direction:column}.entry-offer-actions .button{width:100%}}
