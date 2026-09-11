@@ -1,24 +1,17 @@
 # Mister IA 64
 
-Site de présentation Next.js pour Vercel. Diagnostic IA à 99 €.
+Next.js website deployed from GitHub main to the existing Vercel project. Personalized audit: 99 €.
 
-## Déploiement
+## Indexing configuration
+- Production is indexable; previews/development remain noindex with crawling blocked.
+- Canonicals and sitemap use SITE_URL when explicitly configured, otherwise VERCEL_PROJECT_PRODUCTION_URL. Never use the generated VERCEL_URL.
+- Production refuses to build without a configured HTTPS origin. Vercel system variables must be exposed.
+- Sitemap includes public service, solution, guide and company pages, excluding legal/privacy pages (noindex, follow). No invented update timestamps.
+- Google and Bing ownership verification can be added via GOOGLE_SITE_VERIFICATION and BING_SITE_VERIFICATION.
+- A successful deployment is not evidence of crawling, indexing or rankings. See docs/seo-launch.md for remaining account-level steps.
 
-Importer ce dépôt dans Vercel. Framework : Next.js. Répertoire racine : `./`.
-Conserver les commandes automatiques (`npm run build`) et la sortie par défaut.
-Aucune variable d’environnement ni base de données nécessaire pour cette version de présentation.
-`SITE_URL` peut être défini après connexion du domaine final ; sinon les métadonnées utilisent l’URL du déploiement Vercel.
+## Contact
+WhatsApp is active. No payment or automatic appointment booking. The unused form API returns 503 and stores nothing.
 
-## État
-
-- Pages, navigation et estimateur disponibles.
-- Non indexable pendant la préparation. `noindex` n’est pas un contrôle d’accès.
-- Formulaire fermé : aucun enregistrement ni email. L’API retourne explicitement 503.
-- Aucun compte client, paiement ou réservation.
-- Pas de dépendance Cloudflare Workers/D1 pour cette version.
-
-Avant le lancement commercial : renseigner l’identité légale et le contact, confirmer la qualification fiscale du prix, configurer et tester la réception des prospects, actualiser la confidentialité, puis autoriser l’indexation.
-
-## Local
-
-Node.js 22, `npm ci`, `npm run dev`. Vérification : `npm run build`.
+## Development
+Node.js 22, npm ci, npm run dev. Verify with npm run build.

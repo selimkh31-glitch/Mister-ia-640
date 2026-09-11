@@ -1,11 +1,13 @@
 export type ContentPage = {path:string;kicker:string;title:string;lead:string;sections:{title:string;paragraphs:string[];items:string[]}[];faq:{q:string;a:string}[];links:string[];price:string|null;kind:string;sources:string[][]};
 import { additionalServices } from "./offers";
+import { acquisitionGuides } from "./acquisition-guides";
 export const pages:ContentPage[] = [
+  ...acquisitionGuides,
   ...additionalServices,
   {
     "path": "/services/audit-ia",
     "kicker": "DIAGNOSTIC EXPRESS · 99 €",
-    "title": "Un diagnostic IA pour savoir par où commencer.",
+    "title": "Audit IA personnalisé pour votre entreprise.",
     "lead": "Avant d’ajouter un outil, regardons comment votre entreprise travaille. Nous analysons un processus prioritaire pour identifier des améliorations utiles, faisables et mesurables.",
     "sections": [
       {
@@ -528,14 +530,14 @@ export const pages:ContentPage[] = [
   {
     "path": "/pays-basque",
     "kicker": "BAYONNE · ANGLET · BIARRITZ",
-    "title": "L’IA en entreprise, à l’échelle du Pays Basque.",
+    "title": "Consultant IA au Pays Basque : audit, automatisation et formation.",
     "lead": "Mister IA 64 accompagne les TPE, PME et indépendants du BAB sur leurs processus, leurs outils et leurs usages IA. Le travail peut associer observation dans vos locaux et suivi à distance.",
     "sections": [
       {
-        "title": "Une zone d’intervention, pas des bureaux inventés",
+        "title": "Bayonne, Anglet, Biarritz et la Côte Basque",
         "paragraphs": [
           "Bayonne, Anglet et Biarritz constituent notre périmètre commercial prioritaire. Les interventions à Saint-Jean-de-Luz, Hendaye et ailleurs sur la Côte Basque sont cadrées selon le projet et les déplacements nécessaires.",
-          "Nous n’affichons pas d’adresse d’agence dans chacune de ces villes. Le lieu de rendez-vous, les éventuels frais et les modalités de travail sont convenus avant la mission."
+          "Nous travaillons dans vos locaux lorsque l’observation du processus le nécessite, ou à distance pour le cadrage et le suivi. Le lieu de rendez-vous, les éventuels frais et les modalités sont convenus avant la mission."
         ],
         "items": []
       },
@@ -543,7 +545,7 @@ export const pages:ContentPage[] = [
         "title": "Des situations de travail à explorer",
         "paragraphs": [
           "Pour une entreprise artisanale, le premier sujet peut être la préparation des devis et leur suivi. Pour une activité d’accueil ou de tourisme, ce peut être le tri des demandes et l’accès aux réponses validées. Pour une entreprise de services, la ressaisie entre messagerie, documents et CRM mérite souvent d’être observée.",
-          "Ce sont des hypothèses de travail, pas des cas clients réalisés. Nous vérifions leur pertinence dans votre entreprise plutôt que d’appliquer une recette sectorielle."
+          "Le choix dépend de votre volume de demandes, des outils déjà utilisés et du temps passé sur chaque étape. Nous examinons un cas concret avec vous avant de recommander une solution."
         ],
         "items": []
       },
@@ -569,8 +571,8 @@ export const pages:ContentPage[] = [
         "a": "Oui, selon le besoin et le périmètre convenu. Un échange initial permet de vérifier la zone, la disponibilité et les éventuels frais."
       },
       {
-        "q": "Pourquoi pas une page par ville ?",
-        "a": "Nous préférons une page utile décrivant le périmètre réel. Des pages distinctes pourront être créées lorsque des contenus locaux et des preuves propres les justifieront."
+        "q": "Peut-on commencer à distance ?",
+        "a": "Oui. Préparez un exemple anonymisé de la tâche, les étapes suivies et les outils utilisés. Nous précisons ensemble si une observation dans vos locaux est utile."
       }
     ],
     "links": [

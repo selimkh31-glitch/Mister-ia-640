@@ -5,8 +5,10 @@ import { ArrowUpRight, Check, PhoneMissed, FileText, Clock3 } from "lucide-react
 import { absolute } from "@/lib/site";
 
 export const metadata = {
-  title: "Audit IA personnalisé pour dirigeants | Mister IA 64",
+  title: "Audit IA personnalisé et consultant IA au Pays Basque",
   description: "Identifiez les tâches à automatiser dans votre entreprise. Un audit personnalisé à 99 €, des priorités claires et un plan concret avant d’investir.",
+  openGraph: { title: "Audit IA personnalisé au Pays Basque — Mister IA 64", description: "Un processus analysé, des priorités claires et un plan concret. Audit personnalisé à 99 € pour les indépendants, TPE et PME.", url: absolute("/") },
+  twitter: { card: "summary", title: "Audit IA personnalisé au Pays Basque — Mister IA 64", description: "Un audit à 99 € pour savoir quoi automatiser dans votre entreprise." },
   alternates: { canonical: absolute("/") }
 };
 const questions = [
