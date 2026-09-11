@@ -130,3 +130,14 @@
 .website-price-card li{display:flex;align-items:flex-start;gap:12px}.website-price-card li svg{margin-top:4px}
 .website-price-card .button{width:100%}.website-price-card .website-note{font-size:.875rem!important;line-height:1.6!important;margin-top:18px}
 @media(max-width:760px){.website-offer-inner{grid-template-columns:1fr;gap:30px}.website-price-card{padding:24px}.entry-offer-actions{align-items:stretch;flex-direction:column}.entry-offer-actions .button{width:100%}}
+
+/* Human-first narrative, keeping the local green/cream visual identity. */
+.human-day{padding:34px;border:1px solid #cbd7bd;border-radius:12px;background:#f0f4e8;min-width:0}
+.human-day h2{font-size:clamp(1.6rem,2.5vw,2.2rem);line-height:1.4;margin-block:24px}
+.human-day>p:not(.eyebrow),.human-day div p{font-size:1rem;line-height:1.75;color:#536859}
+.human-day>div{padding:22px;background:#e4f57b;border-radius:6px;margin-top:26px}.human-day div p{margin-top:8px}
+.human-intro{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;border-top:1px solid var(--border);align-items:center}
+.human-intro h2{margin-top:18px}.human-intro p:not(.eyebrow){font-size:1.05rem;line-height:1.8;color:#536859;margin-top:22px}
+.human-intro .text-link{margin-top:24px}.human-promises{background:#edf2e3;border-radius:10px;padding:32px}
+.human-promises h3{font-size:1.6rem;line-height:1.25}.human-promises ul{padding-left:22px;margin-top:24px}.human-promises li{margin-bottom:12px}
+@media(max-width:760px){.human-intro{grid-template-columns:1fr;gap:28px}.human-day,.human-promises{padding:24px}.human-day h2{font-size:1.7rem}}
