@@ -547,6 +547,7 @@ export const pages:ContentPage[] = [
         "title": "Des situations de travail à explorer",
         "paragraphs": [
           "Pour une entreprise artisanale, le premier sujet peut être la préparation des devis et leur suivi. Pour une activité d’accueil ou de tourisme, ce peut être le tri des demandes et l’accès aux réponses validées. Pour une entreprise de services, la ressaisie entre messagerie, documents et CRM mérite souvent d’être observée.",
+          "Lorsque le besoin porte sur la visibilité plutôt que sur un processus interne, nous travaillons aussi le référencement et la présence dans les réponses génératives, à partir d’une offre claire et de contenus vérifiables.",
           "Le choix dépend de votre volume de demandes, des outils déjà utilisés et du temps passé sur chaque étape. Nous examinons un cas concret avec vous avant de recommander une solution."
         ],
         "items": []
@@ -555,7 +556,7 @@ export const pages:ContentPage[] = [
         "title": "Comment organiser une intervention",
         "paragraphs": [
           "Le premier échange délimite le besoin, les personnes à réunir et les exemples à préparer. Si l’observation sur place apporte de la valeur, le rendez-vous se déroule avec la personne qui connaît le processus.",
-          "Le diagnostic à 99 € concerne un processus. L’implémentation, la formation et le suivi font ensuite l’objet d’un périmètre séparé. Vous pouvez également commencer par notre estimateur gratuit, sans partager de documents internes."
+          "Le diagnostic à 99 € concerne un processus. L’automatisation IA, la visibilité SEO/GEO, la formation et le suivi font ensuite l’objet d’un périmètre séparé. Vous pouvez également commencer par notre estimateur gratuit, sans partager de documents internes."
         ],
         "items": []
       },
@@ -579,8 +580,9 @@ export const pages:ContentPage[] = [
     ],
     "links": [
       "/services/audit-ia",
-      "/solutions",
-      "/contact"
+      "/services/automatisation-ia",
+      "/services/seo-geo",
+      "/services/formation-ia"
     ],
     "price": null,
     "kind": "page",
