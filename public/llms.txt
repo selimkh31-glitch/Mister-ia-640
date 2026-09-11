@@ -1,0 +1,15 @@
+# Mister IA 64
+
+Consultant IA pour indépendants, TPE et PME au Pays Basque / BAB (Bayonne, Anglet, Biarritz) et à distance.
+
+Site : https://mister-ia-64.dev
+Contact : contact@mister-ia-64.dev
+
+Marque : Mister IA.
+
+## Pages principales
+
+- https://mister-ia-64.dev/services — Services IA (audit, automatisation, formation, SEO/GEO)
+- https://mister-ia-64.dev/diagnostic — Estimateur de potentiel d’automatisation
+- https://mister-ia-64.dev/pays-basque — Interventions au Pays Basque
+- https://mister-ia-64.dev/contact — Contact
