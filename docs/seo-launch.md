@@ -14,7 +14,7 @@
 
 | Intention | Page cible | Prochaine action |
 | --- | --- | --- |
-| Audit IA PME, diagnostic personnalisé | /services/audit-ia | Demande d’audit |
+| Audit IA à Bayonne, diagnostic 99 € | /services/audit-ia | Demande d’audit |
 | Consultant IA Pays Basque, Bayonne, Anglet, Biarritz | /pays-basque | Diagnostic d’un processus |
 | Automatisation TPE et PME | /services/automatisation-ia | Cadrage du besoin |
 | Assistant vocal IA artisan | /guides/assistant-vocal-ia-artisan | Service agents IA puis audit |
