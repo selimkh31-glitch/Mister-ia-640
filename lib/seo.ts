@@ -4,7 +4,7 @@ export const searchTitles: Record<string, string> = {
   "/services": "Services IA pour TPE et PME au Pays Basque",
   "/solutions": "Automatiser devis, relances et emails en entreprise",
   "/guides": "Guides IA et cas clients pour dirigeants de PME",
-  "/services/audit-ia": "Audit IA personnalisé pour PME : diagnostic à 99 €",
+  "/services/audit-ia": "Audit IA à Bayonne | Diagnostic 99 €",
   "/services/automatisation-ia": "Automatisation IA pour TPE et PME au Pays Basque",
   "/services/agents-ia": "Assistant vocal IA et chatbot pour entreprises",
   "/services/formation-ia": "Formation IA au Pays Basque : outils, images et sites web",
@@ -23,6 +23,7 @@ export const searchTitles: Record<string, string> = {
 export const searchDescriptions: Record<string, string> = {
   "/": "Un accompagnement humain au Pays Basque pour votre site internet, votre SEO local et vos outils IA. Avancez avec Selimkhan, à votre rythme.",
   "/services/creation-site-web": "Votre site vitrine dès 299 € HT : 10 pages, SEO local, blog et formation. Un accompagnement à Saint-Jean-de-Luz et au Pays Basque, de l’idée à la prise en main.",
+  "/services/audit-ia": "Audit IA à Bayonne : diagnostic à 99 € pour TPE et PME du Pays Basque. Un processus prioritaire analysé, un plan concret. Accompagnement Mister IA 64.",
   "/services/seo-geo": "SEO local au Pays Basque : audit du site, contenus, fiche Google et suivi des demandes. Un accompagnement clair pour rendre votre activité plus visible.",
   "/services/automatisation-ia": "Reliez vos emails, devis et logiciels pour réduire les ressaisies. Automatisation et intégrations IA au Pays Basque, avec votre équipe et vos outils.",
   "/services/formation-ia": "Formation et accompagnement IA pour dirigeants et équipes au Pays Basque. Outils livrés, images, vidéos, sites web : apprenez sur vos propres usages.",

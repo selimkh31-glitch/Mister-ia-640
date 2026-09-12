@@ -12,7 +12,7 @@ export const pages:ContentPage[] = [
     "path": "/services/audit-ia",
     "kicker": "DIAGNOSTIC EXPRESS · 99 €",
     "title": "Audit IA personnalisé pour votre entreprise.",
-    "lead": "Avant d’ajouter un outil, regardons comment votre entreprise travaille. Nous analysons un processus prioritaire pour identifier des améliorations utiles, faisables et mesurables.",
+    "lead": "Avant d’ajouter un outil, regardons comment votre entreprise travaille. À Bayonne et au Pays Basque, nous analysons un processus prioritaire pour identifier des améliorations utiles, faisables et mesurables.",
     "sections": [
       {
         "title": "Un seul processus, observé en détail",

@@ -10,6 +10,7 @@ Marque : Mister IA.
 ## Pages principales
 
 - https://mister-ia-64.dev/services — Services IA (audit, automatisation, formation, SEO/GEO)
+- https://mister-ia-64.dev/services/audit-ia — Audit IA à Bayonne, diagnostic 99 € pour TPE et PME
 - https://mister-ia-64.dev/diagnostic — Estimateur de potentiel d’automatisation
 - https://mister-ia-64.dev/pays-basque — Interventions au Pays Basque
 - https://mister-ia-64.dev/contact — Contact
