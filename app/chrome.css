@@ -1,0 +1,116 @@
+.header {
+  background: var(--mia-color-brand-primary);
+  color: var(--mia-color-canvas);
+  border-bottom: 1px solid color-mix(in srgb, var(--mia-color-canvas) 18%, transparent);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  min-height: 82px;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -.045em;
+  color: var(--mia-color-canvas);
+}
+
+.brand:hover { color: var(--mia-color-brand-accent); }
+
+.brand-mark {
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+  border-radius: 0;
+  background: var(--mia-color-brand-accent);
+  color: var(--mia-color-brand-primary);
+}
+.brand-mark svg { width: 18px; height: 18px; }
+.brand-ia { font-weight: 800; }
+.brand-64 { color: var(--mia-color-brand-accent); }
+
+.desktop-nav {
+  gap: clamp(1.25rem, 2.7vw, 2.5rem);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 700;
+}
+.desktop-nav a { color: color-mix(in srgb, var(--mia-color-canvas) 78%, transparent); }
+.desktop-nav a:hover { color: var(--mia-color-brand-accent); }
+
+.header-cta {
+  min-height: 43px;
+  border-radius: 0 !important;
+  background: var(--mia-color-brand-accent) !important;
+  border-color: var(--mia-color-brand-accent) !important;
+  color: var(--mia-color-brand-primary) !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .69rem !important;
+  font-weight: 800 !important;
+}
+.header-cta:hover { transform: translateY(-1px); background: var(--mia-color-canvas) !important; border-color: var(--mia-color-canvas) !important; }
+
+.mobile-menu > summary {
+  color: var(--mia-color-canvas);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .72rem;
+  font-weight: 800;
+}
+.mobile-menu nav {
+  background: var(--mia-color-brand-primary);
+  color: var(--mia-color-canvas);
+  border: 1px solid color-mix(in srgb, var(--mia-color-canvas) 18%, transparent);
+  border-radius: 0;
+}
+.mobile-menu nav a { color: var(--mia-color-canvas); }
+
+.whatsapp-floating {
+  right: 18px;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  border-radius: 0;
+  background: var(--mia-color-brand-accent);
+  border: 1px solid var(--mia-color-brand-primary);
+  color: var(--mia-color-brand-primary);
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .7rem;
+  font-weight: 800;
+}
+.whatsapp-floating:hover { background: var(--mia-color-canvas); color: var(--mia-color-brand-primary); }
+
+footer {
+  background: var(--mia-color-brand-primary);
+  color: var(--mia-color-canvas);
+  border-top: 1px solid color-mix(in srgb, var(--mia-color-canvas) 18%, transparent);
+}
+.footer-grid {
+  border-color: color-mix(in srgb, var(--mia-color-canvas) 18%, transparent);
+}
+footer a { color: color-mix(in srgb, var(--mia-color-canvas) 78%, transparent); }
+footer a:hover { color: var(--mia-color-brand-accent); }
+footer p,
+footer .small-text { color: color-mix(in srgb, var(--mia-color-canvas) 58%, transparent) !important; }
+.footer-bottom {
+  border-color: color-mix(in srgb, var(--mia-color-canvas) 18%, transparent);
+  color: color-mix(in srgb, var(--mia-color-canvas) 52%, transparent);
+}
+
+.review-banner {
+  background: var(--mia-color-brand-accent);
+  color: var(--mia-color-brand-primary);
+  border: 0;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 900px) {
+  .header-inner { min-height: 70px; }
+  .header-cta { display: none; }
+}
