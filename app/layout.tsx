@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header, Footer } from "@/components/site-shell";
 import { site, absolute, serviceAreas } from "@/lib/site";
+import "../design/tokens.css";
 import "./globals.css";
 import { WhatsAppFloating } from "@/components/whatsapp";
 export const metadata:Metadata={metadataBase:new URL(site.origin),title:{default:"Mister IA 64 | Consultant IA au Pays Basque",template:"%s | Mister IA 64"},description:site.description,robots:{index:!site.review,follow:!site.review},verification:{google:process.env.GOOGLE_SITE_VERIFICATION,other:process.env.BING_SITE_VERIFICATION?{'msvalidate.01':process.env.BING_SITE_VERIFICATION}:undefined},icons:{icon:"/favicon.svg"},openGraph:{type:"website",locale:"fr_FR",siteName:site.name,title:"Mister IA 64",description:site.description},twitter:{card:"summary",title:"Mister IA 64",description:site.description}};
