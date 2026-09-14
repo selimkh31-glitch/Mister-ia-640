@@ -82,10 +82,10 @@
 
 .primaryAction {
   background: var(--mia-color-brand-primary);
-  color: white;
+  color: var(--mia-color-surface);
   border: 1px solid var(--mia-color-brand-primary);
 }
-.primaryAction:hover { transform: translateY(-2px); background: #244d45; color: white; }
+.primaryAction:hover { transform: translateY(-2px); background: var(--mia-color-brand-hover); color: var(--mia-color-surface); }
 .lightAction { background: var(--mia-color-brand-accent); color: var(--mia-color-brand-primary); border: 1px solid var(--mia-color-brand-accent); }
 .lightAction:hover { transform: translateY(-2px); color: var(--mia-color-brand-primary); }
 .outlineAction { border: 1px solid currentColor; background: transparent; }
@@ -211,19 +211,19 @@
   color: var(--mia-color-canvas);
 }
 .services .sectionKicker { color: var(--mia-color-brand-accent); }
-.services .sectionHead > p { color: #c8d4ca; }
-.serviceStack { border-top: 1px solid #426257; }
+.services .sectionHead > p { color: var(--mia-color-on-dark-muted); }
+.serviceStack { border-top: 1px solid var(--mia-color-dark-border); }
 .serviceRow {
   display: grid;
   grid-template-columns: 4rem minmax(260px, .78fr) minmax(320px, 1fr) auto;
   gap: var(--mia-space-xl);
   align-items: center;
   padding-block: clamp(2rem, 5vw, 4rem);
-  border-bottom: 1px solid #426257;
+  border-bottom: 1px solid var(--mia-color-dark-border);
 }
 .serviceIndex { color: var(--mia-color-brand-accent); }
 .serviceRow h3 { font-size: clamp(1.8rem, 3.2vw, 3rem); font-weight: 500; letter-spacing: -.04em; }
-.serviceRow p { max-width: 620px; color: #c8d4ca; line-height: 1.8; }
+.serviceRow p { max-width: 620px; color: var(--mia-color-on-dark-muted); line-height: 1.8; }
 .serviceRow a { color: var(--mia-color-brand-accent); }
 
 .casesIntro { max-width: 720px; }
@@ -296,7 +296,7 @@
   border-radius: var(--mia-radius-feature);
 }
 .finalCta h2 { max-width: 850px; margin-top: var(--mia-space-md); font-size: clamp(2.8rem, 5vw, 5rem); line-height: .98; letter-spacing: -.055em; font-weight: 500; }
-.finalCta p { max-width: 650px; margin-top: var(--mia-space-lg); color: #c8d4ca; line-height: 1.75; }
+.finalCta p { max-width: 650px; margin-top: var(--mia-space-lg); color: var(--mia-color-on-dark-muted); line-height: 1.75; }
 
 @media (max-width: 980px) {
   .hero,
