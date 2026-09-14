@@ -1,37 +1,52 @@
-# Mister IA 64 — Design QA
+# Design QA Gate — Mister IA 64
 
-Score each category 0–2: 0 broken/generic, 1 acceptable, 2 deliberate and production-ready.
+This checklist must be completed before a visual change is considered ready.
 
-## Gate
+## Brand
+- [ ] Deep green remains the primary identity color.
+- [ ] Acid citron is used selectively, not as decoration everywhere.
+- [ ] Warm off-white remains the primary canvas.
+- [ ] No purple/blue AI gradient, glassmorphism or generic AI imagery appears.
+- [ ] The page feels local, human and business-focused before technological.
 
-1. Brand distinctiveness
-2. Information hierarchy
-3. Typography consistency
-4. Spacing consistency
-5. Color and contrast
-6. Component consistency
-7. Mobile composition
-8. Interaction clarity
-9. Motion restraint and purpose
-10. Accessibility
-11. Image/art direction
-12. Anti-generic compliance
+## Composition
+- [ ] The page does not become a repeated grid of interchangeable cards.
+- [ ] High-value messages use strong editorial composition and whitespace.
+- [ ] Sections vary in structure while staying coherent.
+- [ ] Every card or panel groups meaningful information.
+- [ ] The primary CTA is obvious without dominating every section.
 
-Minimum release score: 20/24, with no zero in accessibility, mobile composition or brand distinctiveness.
+## Typography
+- [ ] H1 communicates one clear promise.
+- [ ] Serif/italic treatment stays an accent.
+- [ ] Body copy remains highly readable.
+- [ ] Mobile line breaks do not create awkward or misleading phrasing.
 
-## Checklist
+## Tokens
+- [ ] Brand colors come from `design/tokens.css`.
+- [ ] Spacing uses the approved spacing scale wherever practical.
+- [ ] Radius and motion values use semantic tokens.
+- [ ] New visual values are promoted to tokens when they represent reusable roles.
 
-- [ ] The page is recognisably Mister IA 64 without relying only on the logo.
-- [ ] The page does not look interchangeable with a generic AI/SaaS template.
-- [ ] Colors follow the project palette and semantic roles.
-- [ ] Spacing, radii and shadows use an intentional scale.
-- [ ] The main CTA is clear without every section shouting.
-- [ ] Mobile at 320–390px is intentionally composed.
-- [ ] Tablet layout is reviewed.
-- [ ] Desktop line lengths remain readable.
-- [ ] Focus states are visible.
-- [ ] Touch targets are practical.
-- [ ] Contrast remains legible.
-- [ ] Reduced-motion preference is respected.
-- [ ] Real proof is prioritised over decorative UI.
-- [ ] New visual exceptions are documented in `design/design.md`.
+## Responsive
+- [ ] Hero is usable at 320–390 px width.
+- [ ] No horizontal scrolling at mobile widths.
+- [ ] CTAs remain comfortably tappable.
+- [ ] Editorial rows collapse into a clear reading order.
+- [ ] Images have stable dimensions and responsive sizing.
+
+## Accessibility
+- [ ] Heading hierarchy is logical.
+- [ ] Focus styles remain visible.
+- [ ] Text contrast is sufficient.
+- [ ] Decorative icons are hidden from assistive tech when appropriate.
+- [ ] `prefers-reduced-motion` is respected through motion tokens.
+
+## Homepage pilot — 2026-09-14
+- [x] Generic dashboard-style hero removed in favor of an editorial work-method panel.
+- [x] Repeated three-card storytelling removed from the homepage.
+- [x] Real case studies surfaced as editorial project rows.
+- [x] Site / IA / training services presented as a continuous service stack.
+- [x] Semantic tokens are loaded globally and used by the new homepage module.
+- [x] Next/Image used for the homepage illustration.
+- [x] Vercel preview build triggered from the pilot branch.
