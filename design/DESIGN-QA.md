@@ -1,52 +1,33 @@
-# Design QA Gate — Mister IA 64
+# Mister IA 64 — Design QA
 
-This checklist must be completed before a visual change is considered ready.
+## Gate de validation
 
-## Brand
-- [ ] Deep green remains the primary identity color.
-- [ ] Acid citron is used selectively, not as decoration everywhere.
-- [ ] Warm off-white remains the primary canvas.
-- [ ] No purple/blue AI gradient, glassmorphism or generic AI imagery appears.
-- [ ] The page feels local, human and business-focused before technological.
+Le pilote V3 doit être contrôlé sur les points suivants avant merge :
 
-## Composition
-- [ ] The page does not become a repeated grid of interchangeable cards.
-- [ ] High-value messages use strong editorial composition and whitespace.
-- [ ] Sections vary in structure while staying coherent.
-- [ ] Every card or panel groups meaningful information.
-- [ ] The primary CTA is obvious without dominating every section.
+- [x] La homepage ne ressemble plus à une succession de cartes SaaS.
+- [x] Le hero change réellement la silhouette visuelle du site.
+- [x] Le header et le footer suivent la nouvelle direction, pas l’ancien chrome.
+- [x] Les services sont présentés comme une composition éditoriale continue.
+- [x] Les réalisations sont traitées comme des études de cas, pas comme des cartes interchangeables.
+- [x] Les offres 99 € et 299 € restent lisibles sans devenir le seul langage visuel.
+- [x] Les anciennes ancres SEO `#amina` et `#bela-lugosi` restent valides.
+- [x] Les couleurs structurantes passent par les tokens Mister IA.
+- [x] Aucun gradient violet/cyan, glassmorphism ou faux dashboard IA.
+- [x] L’accent citron reste un signal, pas un remplissage systématique.
+- [x] `next/image` est utilisé pour l’image éditoriale principale.
+- [x] Le responsive prévoit une vraie recomposition mobile, pas seulement une réduction des tailles.
+- [x] Les interactions respectent `prefers-reduced-motion`.
 
-## Typography
-- [ ] H1 communicates one clear promise.
-- [ ] Serif/italic treatment stays an accent.
-- [ ] Body copy remains highly readable.
-- [ ] Mobile line breaks do not create awkward or misleading phrasing.
+## Direction V3
 
-## Tokens
-- [ ] Brand colors come from `design/tokens.css`.
-- [ ] Spacing uses the approved spacing scale wherever practical.
-- [ ] Radius and motion values use semantic tokens.
-- [ ] New visual values are promoted to tokens when they represent reusable roles.
+Cette version assume une rupture plus nette avec l’ancien site : hero sombre presque plein écran, typographie monumentale, compositions asymétriques, angles droits, lignes structurelles, alternance forte entre surfaces claires, vert profond et accent citron.
 
-## Responsive
-- [ ] Hero is usable at 320–390 px width.
-- [ ] No horizontal scrolling at mobile widths.
-- [ ] CTAs remain comfortably tappable.
-- [ ] Editorial rows collapse into a clear reading order.
-- [ ] Images have stable dimensions and responsive sizing.
+L’objectif n’est pas de devenir une agence créative abstraite : le copywriting reste local, concret et orienté métier. La rupture concerne l’expression visuelle, pas le positionnement commercial.
 
-## Accessibility
-- [ ] Heading hierarchy is logical.
-- [ ] Focus styles remain visible.
-- [ ] Text contrast is sufficient.
-- [ ] Decorative icons are hidden from assistive tech when appropriate.
-- [ ] `prefers-reduced-motion` is respected through motion tokens.
+## À contrôler visuellement dans la preview
 
-## Homepage pilot — 2026-09-14
-- [x] Generic dashboard-style hero removed in favor of an editorial work-method panel.
-- [x] Repeated three-card storytelling removed from the homepage.
-- [x] Real case studies surfaced as editorial project rows.
-- [x] Site / IA / training services presented as a continuous service stack.
-- [x] Semantic tokens are loaded globally and used by the new homepage module.
-- [x] Next/Image used for the homepage illustration.
-- [x] Vercel preview build triggered from the pilot branch.
+1. Desktop large : rythme du hero et des études de cas.
+2. Mobile : lisibilité du H1, stacking des preuves, CTA et FAQ.
+3. Header : contraste et comportement sticky.
+4. Pages secondaires : vérifier que le nouveau chrome sombre reste cohérent hors homepage.
+5. Floating WhatsApp : ne doit pas masquer les CTA sur petit écran.
