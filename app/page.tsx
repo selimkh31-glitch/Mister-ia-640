@@ -4,335 +4,280 @@ import { WhatsAppButton } from "@/components/whatsapp";
 import { WebsiteButton } from "@/components/website-offer";
 import { AuditButton } from "@/components/audit-button";
 import { LocalServiceLinks } from "@/components/local-service-links";
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Check, MoveRight } from "lucide-react";
 import { pageMetadata } from "@/lib/page-metadata";
 import styles from "./home.module.css";
 
 export const metadata = pageMetadata(
   "/",
-  "Sites web et accompagnement IA au Pays Basque",
-  "Création de sites internet, SEO local, automatisation et accompagnement IA pour les entreprises du Pays Basque."
+  "Sites web, SEO local & IA au Pays Basque",
+  "Mister IA 64 crée des sites internet, automatise les tâches répétitives et accompagne les entreprises du Pays Basque dans l’usage concret de l’IA."
 );
-
-const frictions = [
-  {
-    title: "Le travail continue après la journée.",
-    text: "Un devis à finir, un client à rappeler, une information à retrouver. Le problème n’est pas votre métier : ce sont les petites frictions autour qui finissent par prendre toute la place."
-  },
-  {
-    title: "Votre savoir-faire reste trop discret.",
-    text: "Vous faites du bon travail, mais votre site, votre présence Google ou vos contenus ne le montrent pas encore suffisamment. La visibilité devient une tâche de plus au lieu de soutenir l’activité."
-  },
-  {
-    title: "Votre équipe répète ce qui pourrait être simplifié.",
-    text: "Copier, classer, relancer, répondre aux mêmes questions ou ressaisir des données : certaines tâches peuvent être mieux organisées sans transformer votre entreprise en laboratoire technologique."
-  }
-];
 
 const services = [
   {
-    title: "Créer une présence qui donne confiance.",
-    text: "Sites internet rapides, lisibles et préparés pour le référencement naturel et local. L’objectif n’est pas d’avoir un site de plus, mais un outil qui explique votre métier et aide vos futurs clients à vous choisir.",
+    index: "01",
+    kicker: "Visibilité",
+    title: "Un site qui donne envie de vous appeler.",
+    text: "Une présence claire, rapide et locale, pensée pour Google autant que pour les personnes qui découvrent votre entreprise. Pas un template de plus : un site qui explique pourquoi vous choisir.",
     href: "/services/creation-site-web",
-    label: "Création de site web"
+    cta: "Création de site web"
   },
   {
-    title: "Retirer du travail inutile de vos journées.",
-    text: "Automatisation, assistants IA et intégrations entre vos outils : nous partons d’un processus réel et nous cherchons le moyen le plus simple de réduire les ressaisies, les oublis et les allers-retours.",
+    index: "02",
+    kicker: "Organisation",
+    title: "Moins de copier-coller. Moins d’oubli. Plus de métier.",
+    text: "Nous partons d’une vraie tâche — appels, devis, relances, contenus, catalogue, suivi — puis nous construisons l’automatisation la plus simple qui ait du sens.",
     href: "/services/automatisation-ia",
-    label: "Automatisation & IA"
+    cta: "Automatisation & IA"
   },
   {
-    title: "Rendre votre équipe autonome.",
-    text: "Formation et accompagnement pour comprendre les outils, leurs limites et les bonnes pratiques. Une solution utile doit pouvoir être comprise, adoptée et pilotée par les personnes qui travaillent avec elle.",
+    index: "03",
+    kicker: "Autonomie",
+    title: "Des outils que votre équipe comprend vraiment.",
+    text: "Formation, documentation et accompagnement pour que l’IA reste un levier utile, pas une boîte noire supplémentaire dans votre entreprise.",
     href: "/services/formation-ia",
-    label: "Formation & accompagnement"
+    cta: "Formation & accompagnement"
   }
 ];
 
 const cases = [
   {
-    category: "E-commerce · migration de catalogue",
-    name: "Bela Lugosi",
-    title: "Sortir 15 000 références de Rakuten sans tout ressaisir.",
-    text: "Un bot récupère annonces, images et descriptions, puis prépare le catalogue pour la boutique indépendante et les autres canaux de vente.",
+    number: "01",
+    client: "Bela Lugosi",
+    category: "E-commerce · migration",
+    statement: "15 000 références sorties de Rakuten sans deux années de ressaisie.",
+    detail: "Extraction des annonces, récupération des images et descriptions, préparation de la boutique indépendante et des autres canaux de vente.",
     metric: "15 000",
-    metricLabel: "références transférées",
+    unit: "références",
     href: "/guides/cas-client-bela-lugosi"
   },
   {
-    category: "Artisanat · accueil téléphonique",
-    name: "Société AMINA",
-    title: "Continuer le chantier sans laisser les prospects sans réponse.",
-    text: "Un assistant vocal accueille les appels, recueille les informations du projet et peut préparer une visite pendant que le dirigeant travaille.",
+    number: "02",
+    client: "Société AMINA",
+    category: "Artisanat · appels",
+    statement: "Le dirigeant reste sur le chantier. Les prospects, eux, obtiennent une réponse.",
+    detail: "Un assistant vocal recueille le besoin, les coordonnées et prépare la prise de rendez-vous pendant que l’artisan travaille.",
     metric: "≈ 10",
-    metricLabel: "appels manqués par semaine au départ",
+    unit: "appels manqués / semaine au départ",
     href: "/guides/cas-client-amina"
   },
   {
-    category: "E-commerce · contenus marketing",
-    name: "NOXVAULT Ltd",
-    title: "Préparer les prochaines créations avant le début de la journée.",
-    text: "Le système analyse les contenus performants, prépare de nouvelles variantes et organise la production de contenus à valider.",
+    number: "03",
+    client: "NOXVAULT Ltd",
+    category: "E-commerce · marketing",
+    statement: "Les prochaines créations sont déjà prêtes quand la journée commence.",
+    detail: "Analyse des contenus performants, préparation de nouvelles variantes et organisation de la production image + vidéo à valider.",
     metric: "Image + vidéo",
-    metricLabel: "production préparée pour validation",
+    unit: "production préparée",
     href: "/guides/cas-client-noxvault"
   },
   {
-    category: "Service public · parcours administratif",
-    name: "Pomas",
-    title: "Simplifier les démarches après la tempête.",
-    text: "À partir d’une adresse, le parcours aide à retrouver des références utiles et à préparer les documents nécessaires sans multiplier les recherches.",
+    number: "04",
+    client: "Pomas",
+    category: "Parcours administratif",
+    statement: "Après la tempête, une adresse suffit pour commencer les démarches.",
+    detail: "Le parcours aide les habitants à retrouver les références utiles et à préparer leurs documents sans multiplier les recherches.",
     metric: "1 adresse",
-    metricLabel: "comme point de départ du parcours",
+    unit: "comme point de départ",
     href: "/guides/cas-client-pomas"
   }
 ];
 
 const questions = [
-  [
-    "Concrètement, que signifie votre accompagnement ?",
-    "Nous commençons par votre métier, vos outils et une situation réelle. Ensuite seulement nous regardons si un site, une automatisation, une formation ou une autre solution peut réellement améliorer le quotidien."
-  ],
-  [
-    "Que comprend le site à partir de 299 € HT ?",
-    "Un site vitrine de 10 pages, un affichage adapté aux mobiles, la préparation du référencement naturel et local, un blog SEO et une formation pour vous ou votre équipe. Le domaine et les éventuels services tiers sont précisés au devis."
-  ],
-  [
-    "Dois-je commander un audit avant mon site ?",
-    "Non. Le site web et l’audit IA sont deux offres indépendantes. Vous pouvez demander directement un site ou commencer par l’audit si votre priorité est d’améliorer un processus interne."
-  ],
-  [
-    "Est-ce adapté à une petite entreprise ?",
-    "Oui. Nous cherchons un premier projet utile et proportionné à vos moyens : visibilité locale, devis, appels, relances, contenus, organisation ou autre tâche concrète."
-  ],
-  [
-    "Faut-il déjà savoir utiliser l’IA ?",
-    "Non. Vous expliquez votre fonctionnement avec vos mots. Notre rôle est de traduire les possibilités techniques en choix compréhensibles, avec leurs limites et leur coût."
-  ]
+  ["Vous travaillez uniquement avec des entreprises du Pays Basque ?", "Le Pays Basque est notre ancrage local, mais certains projets peuvent aussi être menés à distance. Pour les missions locales, l’avantage est simple : nous pouvons comprendre le terrain, les clients et l’activité sans tout faire par écran interposé."],
+  ["Que comprend le site à partir de 299 € HT ?", "Un site vitrine de 10 pages, adapté au mobile, avec une base SEO naturel et local, un blog prêt à publier et une formation pour vous ou votre équipe. Le nom de domaine et les éventuels services tiers restent séparés."],
+  ["Faut-il commencer par l’audit IA à 99 € ?", "Non. L’audit est utile quand vous voulez d’abord comprendre où l’IA ou l’automatisation peuvent vous faire gagner du temps. Pour un besoin clair de site internet, nous pouvons commencer directement par le projet web."],
+  ["Je ne connais rien à l’IA, c’est un problème ?", "Non. Vous connaissez votre entreprise ; c’est l’essentiel. Nous nous chargeons de traduire les possibilités techniques en choix concrets, compréhensibles et proportionnés à vos moyens."],
+  ["Est-ce que je reste dépendant de vous ensuite ?", "L’objectif est l’inverse. Quand c’est pertinent, nous prévoyons la prise en main, la documentation et la formation pour que vous puissiez gérer ce qui doit l’être sans nous appeler pour chaque modification."]
 ];
 
 export default function Home() {
   return (
     <main id="main" className={styles.page}>
-      <section className={`wrap ${styles.hero}`} aria-labelledby="home-title">
-        <div className={styles.heroCopy}>
-          <p className={styles.kicker}>Studio numérique local · Pays Basque</p>
-          <h1 id="home-title">
-            Votre métier mérite mieux que <span className={styles.editorial}>du bricolage numérique.</span>
-          </h1>
-          <p className={styles.heroIntro}>
-            Je crée des sites internet et des outils IA pour les entreprises qui veulent être plus visibles, mieux organisées et moins dépendantes des tâches répétitives — sans jargon et sans usine à gaz.
-          </p>
-          <div className={styles.heroActions}>
-            <WhatsAppButton className={styles.primaryAction}>Parlons de votre activité</WhatsAppButton>
-            <Link className={styles.textAction} href="#realisations">
-              Voir des réalisations <ArrowUpRight size={18} aria-hidden="true" />
-            </Link>
+      <section className={styles.hero} aria-labelledby="home-title">
+        <div className={`wrap ${styles.heroGrid}`}>
+          <div className={styles.heroEyebrow}>
+            <span>Mister IA 64</span>
+            <span>Pays Basque · France</span>
           </div>
-          <p className={styles.heroNote}>Un interlocuteur local, de Saint-Jean-de-Luz au BAB · Sites web · SEO local · automatisation · formation IA.</p>
-        </div>
 
-        <aside className={styles.heroStudio} aria-label="Méthode de travail Mister IA 64">
-          <div className={styles.studioTop}>
-            <span>UNE MÉTHODE SIMPLE</span>
-            <span>64</span>
-          </div>
-          <div className={styles.workSteps}>
-            <div className={styles.workStep}>
-              <span>01</span>
-              <div><strong>Comprendre votre métier.</strong><p>Vos clients, vos contraintes, vos habitudes et ce qui vous prend trop de temps.</p></div>
-            </div>
-            <div className={styles.workStep}>
-              <span>02</span>
-              <div><strong>Choisir le bon levier.</strong><p>Site, référencement, automatisation ou formation : uniquement ce qui sert le besoin réel.</p></div>
-            </div>
-            <div className={styles.workStep}>
-              <span>03</span>
-              <div><strong>Construire puis transmettre.</strong><p>Une solution claire, testée, documentée et compréhensible par votre équipe.</p></div>
+          <div className={styles.heroMain}>
+            <h1 id="home-title">
+              Votre entreprise n’a pas besoin de <em>plus de tech.</em>
+              <span>Elle a besoin de mieux.</span>
+            </h1>
+            <div className={styles.heroSideCopy}>
+              <p>Sites web, visibilité locale et automatisations utiles pour les entreprises qui veulent avancer sans transformer leur métier en projet informatique.</p>
+              <div className={styles.heroActions}>
+                <WhatsAppButton className={styles.heroCta}>Parler de mon entreprise</WhatsAppButton>
+                <Link href="#work" className={styles.heroTextLink}>Voir le travail <ArrowDownRight size={18}/></Link>
+              </div>
             </div>
           </div>
-          <div className={styles.studioResult}>
-            <span>Le résultat recherché</span>
-            <strong>Moins de friction. Plus de métier.</strong>
-          </div>
-        </aside>
-      </section>
 
-      <section className={styles.proofBand} aria-label="Repères Mister IA 64">
-        <div className={`wrap ${styles.proofInner}`}>
-          <div className={styles.proofLead}><strong>Du concret avant la technologie.</strong><span>Chaque projet part d’un besoin métier identifiable.</span></div>
-          <div className={styles.proofItem}><strong>Pays Basque</strong><span>accompagnement local et à distance</span></div>
-          <div className={styles.proofItem}><strong>299 € HT</strong><span>site vitrine à partir de</span></div>
-          <div className={styles.proofItem}><strong>99 €</strong><span>audit IA personnalisé</span></div>
+          <div className={styles.heroFooter}>
+            <div><strong>299 € HT</strong><span>Site vitrine · à partir de</span></div>
+            <div><strong>99 €</strong><span>Audit IA personnalisé</span></div>
+            <div><strong>Local</strong><span>Saint-Jean-de-Luz · BAB · Pays Basque</span></div>
+            <div className={styles.heroScroll}><span>Descendre</span><MoveRight size={18}/></div>
+          </div>
         </div>
       </section>
 
-      <section className={`wrap ${styles.section}`} aria-labelledby="frictions-title">
-        <div className={styles.sectionHead}>
-          <div>
-            <p className={styles.sectionKicker}>Votre quotidien d’abord</p>
-            <h2 id="frictions-title">Le numérique doit vous faire gagner de la place.</h2>
+      <section className={styles.statement} aria-labelledby="statement-title">
+        <div className="wrap">
+          <p className={styles.microLabel}>Notre rôle</p>
+          <h2 id="statement-title">Faire disparaître la technique derrière une expérience <em>claire, utile et humaine.</em></h2>
+          <div className={styles.statementGrid}>
+            <p>Vous connaissez vos clients, votre métier et vos contraintes. C’est notre point de départ. Nous intervenons là où le numérique peut vraiment aider : être trouvé, mieux présenter votre travail, répondre plus vite ou retirer des tâches répétitives.</p>
+            <p>On ne vous vend pas “de l’IA”. On construit quelque chose qui doit pouvoir se résumer en une phrase simple : <strong>voilà ce que ça change pour votre entreprise.</strong></p>
           </div>
-          <p>Pas vous rajouter une nouvelle compétence à gérer le soir. Nous cherchons les endroits où la technologie peut réellement soutenir votre activité.</p>
-        </div>
-        <div className={styles.frictionList}>
-          {frictions.map((item, index) => (
-            <article className={styles.frictionItem} key={item.title}>
-              <span>0{index + 1}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
         </div>
       </section>
 
       <section className={styles.services} aria-labelledby="services-title">
-        <div className={`wrap ${styles.section}`}>
-          <div className={styles.sectionHead}>
-            <div>
-              <p className={styles.sectionKicker}>Ce que nous pouvons construire</p>
-              <h2 id="services-title">Une présence forte dehors. Une organisation plus légère dedans.</h2>
-            </div>
-            <p>Les services sont complémentaires, mais jamais imposés en bloc. Chaque intervention doit pouvoir expliquer clairement ce qu’elle améliore.</p>
+        <div className="wrap">
+          <div className={styles.sectionLead}>
+            <p className={styles.microLabel}>03 leviers</p>
+            <h2 id="services-title">Visible dehors.<br/>Plus léger dedans.</h2>
           </div>
-          <div className={styles.serviceStack}>
-            {services.map((service, index) => (
-              <article className={styles.serviceRow} key={service.title}>
-                <span className={styles.serviceIndex}>0{index + 1}</span>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-                <Link className={styles.textAction} href={service.href}>{service.label} <ArrowUpRight size={18} aria-hidden="true" /></Link>
+          <div className={styles.serviceList}>
+            {services.map((service) => (
+              <article key={service.index} className={styles.serviceItem}>
+                <div className={styles.serviceNumber}>{service.index}</div>
+                <div className={styles.serviceTitle}>
+                  <p>{service.kicker}</p>
+                  <h3>{service.title}</h3>
+                </div>
+                <div className={styles.serviceCopy}>
+                  <p>{service.text}</p>
+                  <Link href={service.href}>{service.cta} <ArrowUpRight size={17}/></Link>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="realisations" className={`wrap ${styles.section}`} aria-labelledby="cases-title">
-        <div className={styles.sectionHead}>
-          <div className={styles.casesIntro}>
-            <p className={styles.sectionKicker}>Réalisations</p>
-            <h2 id="cases-title">Des situations réelles. Pas des démos inventées.</h2>
+      <section id="work" className={styles.work} aria-labelledby="work-title">
+        <div className="wrap">
+          <div className={styles.workHeader}>
+            <div>
+              <p className={styles.microLabel}>Travail réel</p>
+              <h2 id="work-title">Pas de démo fictive.<br/><em>Des problèmes résolus.</em></h2>
+            </div>
+            <p>Quatre contextes très différents, une même règle : partir du terrain avant de choisir la technologie.</p>
           </div>
-          <p>Catalogue e-commerce, appels d’un artisan, production marketing ou démarches administratives : les usages changent, la méthode reste la même.</p>
-        </div>
-        <div className={styles.caseList}>
-          {cases.map((project, index) => (
-            <article className={styles.caseRow} key={project.name}>
-              <span className={styles.caseIndex}>0{index + 1}</span>
-              <div className={styles.caseBody}>
-                <p className={styles.sectionKicker}>{project.category} · {project.name}</p>
-                <h3>{project.title}</h3>
-                <p>{project.text}</p>
-              </div>
-              <div className={styles.caseMeta}>
-                <div><strong className={styles.caseMetric}>{project.metric}</strong><small>{project.metricLabel}</small></div>
-                <Link className={styles.textAction} href={project.href}>Lire le cas <ArrowUpRight size={18} aria-hidden="true" /></Link>
-              </div>
-            </article>
-          ))}
+
+          <div className={styles.caseStack}>
+            {cases.map((item, index) => (
+              <article key={item.client} className={`${styles.case} ${index % 2 ? styles.caseAlt : ""}`}>
+                <div className={styles.caseTop}>
+                  <span>{item.number}</span>
+                  <span>{item.category}</span>
+                  <span>{item.client}</span>
+                </div>
+                <div className={styles.caseMain}>
+                  <h3>{item.statement}</h3>
+                  <div className={styles.caseInfo}>
+                    <div className={styles.caseMetric}><strong>{item.metric}</strong><span>{item.unit}</span></div>
+                    <p>{item.detail}</p>
+                    <Link href={item.href}>Voir le cas <ArrowUpRight size={17}/></Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className={styles.humanSection} aria-labelledby="human-title">
+      <section className={styles.human} aria-labelledby="human-title">
         <div className={`wrap ${styles.humanGrid}`}>
-          <div className={styles.humanMedia}>
-            <Image
-              src="/images/accompagnement-organisation-960.webp"
-              alt="Illustration d’un parcours de travail organisé avec Mister IA 64"
-              width={960}
-              height={640}
-              sizes="(max-width: 980px) 100vw, 48vw"
-            />
-            <p className={styles.humanCaption}>Comprendre, organiser, puis construire. Illustration conceptuelle du processus d’accompagnement.</p>
+          <div className={styles.humanImage}>
+            <Image src="/images/accompagnement-organisation-960.webp" width={960} height={640} sizes="(max-width: 900px) 100vw, 48vw" alt="Illustration du travail d’organisation et d’accompagnement proposé par Mister IA 64"/>
+            <div className={styles.imageStamp}>MIA / 64</div>
           </div>
           <div className={styles.humanCopy}>
-            <p className={styles.sectionKicker}>Derrière Mister IA 64, il y a Selimkhan</p>
-            <h2 id="human-title">Une approche d’artisan pour vos outils numériques.</h2>
-            <p>Je ne commence pas par vous montrer une technologie. Je commence par vous demander comment fonctionne votre entreprise. C’est ce qui permet de construire quelque chose qui vous ressemble et que votre équipe peut réellement utiliser.</p>
-            <div className={styles.humanPoints}>
-              <div className={styles.humanPoint}><span>01</span><strong>Un besoin concret avant un choix technique.</strong></div>
-              <div className={styles.humanPoint}><span>02</span><strong>Des explications claires sur le travail, le prix et les limites.</strong></div>
-              <div className={styles.humanPoint}><span>03</span><strong>Une vraie prise en main pour ne pas rester dépendant.</strong></div>
+            <p className={styles.microLabel}>Derrière le nom</p>
+            <h2 id="human-title">Un interlocuteur.<br/><em>Pas une agence fantôme.</em></h2>
+            <p>Je m’appelle Selimkhan. Mon travail est de comprendre votre activité assez bien pour construire des outils qui paraissent évidents à utiliser. Vous n’avez pas besoin de parler technique pour travailler avec moi.</p>
+            <div className={styles.principles}>
+              <div><span>01</span><p>On part d’un besoin réel, jamais d’un outil à placer.</p></div>
+              <div><span>02</span><p>Le prix, les limites et ce qui reste à votre charge sont expliqués.</p></div>
+              <div><span>03</span><p>Quand c’est pertinent, votre équipe apprend à reprendre la main.</p></div>
             </div>
-            <div className={styles.sectionActions}><Link className={styles.textAction} href="/a-propos">Découvrir l’approche <ArrowUpRight size={18} /></Link></div>
+            <Link className={styles.inlineLink} href="/a-propos">Découvrir l’approche <ArrowUpRight size={17}/></Link>
           </div>
         </div>
       </section>
 
-      <section id="audit" className={styles.auditSection} aria-labelledby="audit-title">
+      <section className={styles.audit} id="audit" aria-labelledby="audit-title">
         <div className={`wrap ${styles.auditGrid}`}>
-          <div className={styles.auditCopy}>
-            <p className={styles.sectionKicker}>Un premier pas concret</p>
-            <h2 id="audit-title">Prenons une tâche qui vous pèse. Regardons comment l’alléger.</h2>
-            <p>Vous me montrez comment une situation se passe aujourd’hui. Je repère avec vous les blocages, les ressaisies et les possibilités réalistes d’amélioration. Vous repartez avec des priorités et un premier projet recommandé.</p>
+          <div>
+            <p className={styles.microLabel}>Audit IA · 99 €</p>
+            <h2 id="audit-title">Montrez-moi une tâche qui vous fait perdre du temps.</h2>
           </div>
           <div className={styles.auditOffer}>
-            <div className={styles.auditPrice}><span>AUDIT IA PERSONNALISÉ</span><strong>99 €</strong></div>
-            <ul className={styles.auditList}>
-              {["Un processus prioritaire analysé.", "3 à 5 pistes classées par intérêt.", "Un premier projet recommandé.", "Un budget estimatif et les prochaines étapes."].map(item => <li key={item}><Check size={17} aria-hidden="true" /><span>{item}</span></li>)}
+            <p>Nous prenons un processus réel, nous regardons où ça coince et vous repartez avec les pistes prioritaires, un premier projet recommandé et une estimation de la suite.</p>
+            <ul>
+              <li><Check size={18}/> 1 processus analysé en détail</li>
+              <li><Check size={18}/> 3 à 5 pistes classées par intérêt</li>
+              <li><Check size={18}/> budget et prochaines étapes</li>
             </ul>
-            <AuditButton className={styles.primaryAction}>Demander mon audit</AuditButton>
-            <p className={styles.auditNote}>Demande sur WhatsApp · Aucun engagement sur la mise en place après l’audit.</p>
+            <AuditButton className={styles.darkCta}>Demander mon audit — 99 €</AuditButton>
           </div>
         </div>
       </section>
 
-      <section id="site-web" className={`wrap ${styles.siteOffer}`} aria-labelledby="site-title">
-        <div className={styles.siteOfferGrid}>
-          <div className={styles.siteOfferCopy}>
-            <p className={styles.sectionKicker}>Création de site internet</p>
-            <h2 id="site-title">Votre savoir-faire mérite d’être <span className={styles.editorial}>vu et compris.</span></h2>
-            <p>Pour une création d’entreprise ou une présence web à reprendre, je construis un site vitrine clair, rapide et pensé pour le référencement local. Vous repartez aussi avec la formation nécessaire pour modifier vos contenus.</p>
-            <div className={styles.sectionActions}>
-              <Link className={styles.textAction} href="/services/creation-site-web">Voir l’offre site web <ArrowUpRight size={18} /></Link>
-            </div>
+      <section className={styles.website} aria-labelledby="website-title">
+        <div className={`wrap ${styles.websiteGrid}`}>
+          <div className={styles.websiteLead}>
+            <p className={styles.microLabel}>Création de site</p>
+            <h2 id="website-title">Votre savoir-faire mérite mieux qu’une page Facebook abandonnée.</h2>
+            <p>Pour les indépendants, artisans et petites entreprises : un site vitrine clair, rapide, local et suffisamment simple pour être repris ensuite.</p>
+            <Link className={styles.inlineLink} href="/services/creation-site-web">Voir l’offre complète <ArrowUpRight size={17}/></Link>
           </div>
-          <div className={styles.sitePricePanel}>
-            <p className={styles.sectionKicker}>SITE VITRINE · 10 PAGES</p>
-            <p className={styles.sitePrice}>299 € <small>HT · À PARTIR DE</small></p>
-            <div className={styles.siteIncludes}>
-              <div><span>Structure</span><strong>10 pages</strong></div>
-              <div><span>Visibilité</span><strong>SEO naturel + local</strong></div>
-              <div><span>Contenu</span><strong>Blog SEO préparé</strong></div>
-              <div><span>Autonomie</span><strong>Formation incluse</strong></div>
-              <div><span>Responsive</span><strong>Mobile + ordinateur</strong></div>
+          <div className={styles.websitePrice}>
+            <p>À partir de</p>
+            <strong>299 €</strong>
+            <span>HT · 10 pages</span>
+            <div className={styles.websiteIncludes}>
+              <span>SEO naturel + local</span>
+              <span>Blog prêt à publier</span>
+              <span>Mobile + ordinateur</span>
+              <span>Formation incluse</span>
             </div>
-            <div className={styles.sectionActions}><WebsiteButton className={styles.primaryAction}>Parlons de mon site</WebsiteButton></div>
+            <WebsiteButton className={styles.heroCta}>Parler de mon site</WebsiteButton>
           </div>
         </div>
       </section>
 
-      <section className={`wrap ${styles.faq}`} aria-labelledby="faq-title">
-        <div className={styles.faqGrid}>
-          <div className={styles.faqIntro}>
-            <p className={styles.sectionKicker}>Questions fréquentes</p>
-            <h2 id="faq-title">Comprendre avant de décider.</h2>
-          </div>
+      <section className={styles.faq} aria-labelledby="faq-title">
+        <div className="wrap">
+          <div className={styles.faqHeader}><p className={styles.microLabel}>Questions fréquentes</p><h2 id="faq-title">Avant de commencer.</h2></div>
           <div className={styles.faqList}>
-            {questions.map(([question, answer]) => (
-              <details key={question}>
-                <summary>{question}</summary>
-                <p>{answer}</p>
+            {questions.map(([q, a], i) => (
+              <details key={q} className={styles.faqItem}>
+                <summary><span>0{i + 1}</span>{q}<ArrowDownRight size={19}/></summary>
+                <p>{a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <div className={`wrap ${styles.localLinks}`}><LocalServiceLinks /></div>
-
-      <section className={`wrap ${styles.section}`} aria-labelledby="final-title">
-        <div className={styles.finalCta}>
+      <section className={styles.finalCta} aria-labelledby="final-title">
+        <div className={`wrap ${styles.finalGrid}`}>
+          <h2 id="final-title">Vous connaissez votre métier.<br/><em>Parlons du reste.</em></h2>
           <div>
-            <p className={styles.localTag}>Mister IA 64 · Pays Basque</p>
-            <h2 id="final-title">Parlons de votre métier avant de parler d’IA.</h2>
-            <p>Dites-moi ce que vous faites, ce que vous voulez développer et ce qui vous prend trop de temps. Nous verrons quel premier pas a réellement du sens.</p>
+            <p>Expliquez-moi simplement ce que vous faites et ce que vous aimeriez améliorer. On partira de là.</p>
+            <WhatsAppButton className={styles.lightCta}>Écrire sur WhatsApp</WhatsAppButton>
           </div>
-          <WhatsAppButton className={styles.lightAction}>Démarrer la conversation</WhatsAppButton>
         </div>
       </section>
+
+      <div className={styles.localLinks}><div className="wrap"><LocalServiceLinks/></div></div>
     </main>
   );
 }
