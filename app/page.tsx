@@ -43,6 +43,7 @@ const services = [
 
 const cases = [
   {
+    id: "bela-lugosi",
     number: "01",
     client: "Bela Lugosi",
     category: "E-commerce · migration",
@@ -53,6 +54,7 @@ const cases = [
     href: "/guides/cas-client-bela-lugosi"
   },
   {
+    id: "amina",
     number: "02",
     client: "Société AMINA",
     category: "Artisanat · appels",
@@ -63,6 +65,7 @@ const cases = [
     href: "/guides/cas-client-amina"
   },
   {
+    id: "noxvault",
     number: "03",
     client: "NOXVAULT Ltd",
     category: "E-commerce · marketing",
@@ -73,6 +76,7 @@ const cases = [
     href: "/guides/cas-client-noxvault"
   },
   {
+    id: "pomas",
     number: "04",
     client: "Pomas",
     category: "Parcours administratif",
@@ -172,7 +176,7 @@ export default function Home() {
 
           <div className={styles.caseStack}>
             {cases.map((item, index) => (
-              <article key={item.client} className={`${styles.case} ${index % 2 ? styles.caseAlt : ""}`}>
+              <article id={item.id} key={item.client} className={`${styles.case} ${index % 2 ? styles.caseAlt : ""}`}>
                 <div className={styles.caseTop}>
                   <span>{item.number}</span>
                   <span>{item.category}</span>
