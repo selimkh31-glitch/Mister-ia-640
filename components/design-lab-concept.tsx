@@ -45,6 +45,7 @@ const services = [
 export function DesignLabConcept({ mode }: { mode:Mode }) {
   const concept = concepts[mode];
   return <main className={`${styles.lab} ${styles[mode]}`}>
+    <style>{`.header, footer, .whatsapp-floating, .review-banner{display:none!important}`}</style>
     <nav className={styles.switcher} aria-label="Changer de direction visuelle">
       <Link href="/design-lab/editorial">A</Link><Link href="/design-lab/signal">B</Link><Link href="/design-lab/kinetic">C</Link><span>{concept.name}</span>
     </nav>
