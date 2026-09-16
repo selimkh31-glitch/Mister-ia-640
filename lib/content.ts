@@ -549,9 +549,9 @@ export const pages:ContentPage[] = [
   },
   {
     "path": "/pays-basque",
-    "kicker": "PAYS BASQUE · ACCOMPAGNEMENT DE PROXIMITÉ",
-    "title": "Sites internet et accompagnement IA au Pays Basque.",
-    "lead": "Dirigeant, artisan ou commerçant : vous avez besoin d’être trouvé et de garder du temps pour vos clients. Selimkhan vous accompagne sur votre site, votre visibilité locale et les outils de votre équipe.",
+    "kicker": "PAYS BASQUE · CONSULTANT IA",
+    "title": "Consultant IA au Pays Basque : Bayonne, Anglet, Biarritz.",
+    "lead": "Vous cherchez un consultant ou un expert IA au Pays Basque ? Chez Mister IA 64, Selimkhan accompagne les TPE et PME de Bayonne, Anglet, Biarritz et du sud de la côte : diagnostic 99 €, visibilité locale et outils pour l’équipe.",
     "sections": [
       {
         "title": "Saint-Jean-de-Luz, Ciboure et Hendaye : être trouvé dans votre zone réelle",
@@ -561,15 +561,15 @@ export const pages:ContentPage[] = [
         ],
         "items": [
           "Site vitrine : 10 pages à partir de 299 € HT, SEO local, blog et formation inclus.",
-          "Référencement local : travailler vos pages et la cohérence de vos informations publiques.",
+          "Référencement local : un [SEO local](/services/seo-geo) pour vos pages et la cohérence de vos informations publiques.",
           "Un contact accessible sur mobile, sans obliger le visiteur à chercher votre numéro."
         ]
       },
       {
         "title": "Bayonne, Anglet et Biarritz : relier visibilité et suivi des demandes",
         "paragraphs": [
-          "Sur le BAB, votre site peut être le point de départ d’un parcours qui continue par un appel, un devis ou un rendez-vous. Le travail ne s’arrête donc pas à la mise en ligne : nous regardons aussi comment la demande arrive à la bonne personne et comment elle est suivie.",
-          "Pour votre équipe, une automatisation peut préparer une fiche client, regrouper les pièces d’un devis ou rappeler une prochaine action. Le choix dépend de vos logiciels et du temps réellement consacré à ces tâches."
+          "Sur le BAB, un expert IA local ne se limite pas à publier un site : il regarde comment une demande devient un appel, un devis ou un rendez-vous, et qui la traite ensuite. Mister IA 64 intervient à Bayonne, Anglet et Biarritz sans inventer une agence dans chaque ville.",
+          "Pour votre équipe, une [automatisation IA](/services/automatisation-ia) peut préparer une fiche client, regrouper les pièces d’un devis ou rappeler une prochaine action. Le choix dépend de vos logiciels et du temps réellement consacré à ces tâches."
         ],
         "items": []
       },
@@ -588,13 +588,29 @@ export const pages:ContentPage[] = [
           "Pour une automatisation ou une formation : un exemple anonymisé de la tâche, les outils utilisés et les personnes concernées. Nous pouvons alors définir une première étape adaptée à votre budget."
         ],
         "items": [
-          "Créer votre présence en ligne : l’offre site vitrine est accessible sans audit préalable.",
-          "Clarifier une tâche répétitive : l’audit personnalisé à 99 € porte sur un processus.",
-          "Accompagner votre équipe : programme de formation et suivi définis ensemble."
+          "Créer votre présence en ligne : l’offre [site vitrine](/services/creation-site-web) est accessible sans audit préalable.",
+          "Clarifier une tâche répétitive : l’[audit IA local](/services/audit-ia) à 99 € porte sur un processus.",
+          "Accompagner votre équipe : [formation IA](/services/formation-ia) et suivi définis ensemble."
         ]
       }
     ],
     "faq": [
+      {
+        "q": "Qui peut m’accompagner comme consultant IA au Pays Basque ?",
+        "a": "Chez Mister IA 64, Selimkhan est votre interlocuteur pour les entreprises du Pays Basque, de Saint-Jean-de-Luz au BAB. Nous partons d’un besoin concret — un processus, un site ou une visibilité locale — plutôt que d’un catalogue d’outils. Le premier pas est souvent un [audit IA](/services/audit-ia) à 99 €."
+      },
+      {
+        "q": "Y a-t-il un expert IA à Bayonne, Anglet ou Biarritz ?",
+        "a": "Oui : nous intervenons sur le BAB et sur le sud de la côte. Le rendez-vous se décide avec vous, dans vos locaux lorsqu’il faut observer une tâche, ou à distance pour cadrer un [SEO local](/services/seo-geo) ou une [formation IA](/services/formation-ia). Aucune permanence n’est annoncée dans chaque commune."
+      },
+      {
+        "q": "En quoi consiste un audit IA local ?",
+        "a": "L’audit IA à 99 € porte sur un seul processus de votre entreprise : devis, relances, demandes clients ou planning. Nous observons le fonctionnement réel, puis vous remettez un plan priorisé. L’[automatisation IA](/services/automatisation-ia), la mise en place ou la formation font l’objet d’un devis distinct."
+      },
+      {
+        "q": "Proposez-vous une solution IA pour les TPE du Pays Basque ?",
+        "a": "Nous proposons un accompagnement, pas un logiciel unique. Après le diagnostic, la suite peut être une règle simple dans vos outils, une automatisation, un assistant — ou parfois ne rien automatiser. Le périmètre est écrit avant tout engagement."
+      },
       {
         "q": "Avez-vous une agence dans chaque ville ?",
         "a": "Non. Les villes citées décrivent une zone d’intervention. Vous échangez avec Selimkhan ; le lieu et les modalités d’un éventuel rendez-vous sont définis ensemble."
@@ -605,10 +621,11 @@ export const pages:ContentPage[] = [
       }
     ],
     "links": [
-      "/services/creation-site-web",
-      "/services/seo-geo",
+      "/services/audit-ia",
       "/services/automatisation-ia",
+      "/services/seo-geo",
       "/services/formation-ia",
+      "/services/creation-site-web",
       "/contact"
     ],
     "price": null,

@@ -16,7 +16,7 @@ export const searchTitles: Record<string, string> = {
   "/solutions/automatiser-devis": "Automatiser ses devis : préparation et validation",
   "/solutions/automatiser-relances": "Automatiser les relances de devis et prospects",
   "/solutions/automatiser-emails": "Automatiser le tri des emails et préparer les réponses",
-  "/pays-basque": "Sites web et accompagnement IA au Pays Basque",
+  "/pays-basque": "Consultant IA Pays Basque : Bayonne, Anglet, Biarritz",
   "/a-propos": "Selimkhan, consultant IA chez Mister IA 64",
   "/methode": "Notre méthode : audit IA, pilote et automatisation",
 };
@@ -27,7 +27,31 @@ export const searchDescriptions: Record<string, string> = {
   "/services/seo-geo": "SEO local au Pays Basque : audit du site, contenus, fiche Google et suivi des demandes. Un accompagnement clair pour rendre votre activité plus visible.",
   "/services/automatisation-ia": "Reliez vos emails, devis et logiciels pour réduire les ressaisies. Automatisation et intégrations IA au Pays Basque, avec votre équipe et vos outils.",
   "/services/formation-ia": "Formation et accompagnement IA pour dirigeants et équipes au Pays Basque. Outils livrés, images, vidéos, sites web : apprenez sur vos propres usages.",
-  "/pays-basque": "Sites internet, SEO local et accompagnement IA de Saint-Jean-de-Luz au BAB, Ciboure et Hendaye. Des besoins concrets, un interlocuteur et un périmètre clair.",
+  "/pays-basque": "Consultant et expert IA au Pays Basque (Bayonne, Anglet, Biarritz). Diagnostic 99 €, automatisation, SEO et formation pour TPE et PME. Accompagnement Mister IA 64.",
   "/a-propos": "Découvrez Selimkhan et l’approche artisanale de Mister IA 64 : écoute, accompagnement et prise en main des outils pour les petites entreprises du Pays Basque.",
 };
 export const hiddenFromSearch = new Set(["/mentions-legales", "/confidentialite"]);
+
+const relatedLinkLabels: Record<string, string> = {
+  "/contact": "PARLONS DE VOTRE BESOIN",
+  "/diagnostic": "ESTIMER MON POTENTIEL",
+  "/solutions": "VOS BESOINS",
+  "/services/audit-ia": "AUDIT IA",
+  "/services/automatisation-ia": "AUTOMATISATION IA",
+  "/services/seo-geo": "SEO/GEO",
+  "/services/formation-ia": "FORMATION IA",
+};
+
+const paysBasqueLinkLabels: Record<string, string> = {
+  "/services/audit-ia": "Audit IA local — diagnostic 99 €",
+  "/services/automatisation-ia": "Automatisation IA pour TPE et PME",
+  "/services/seo-geo": "SEO local au Pays Basque",
+  "/services/formation-ia": "Formation IA au Pays Basque",
+  "/services/creation-site-web": "Site vitrine au Pays Basque",
+  "/contact": "Parler de votre besoin",
+};
+
+export function relatedLabel(href: string, path: string, fallback: string) {
+  if (path === "/pays-basque" && paysBasqueLinkLabels[href]) return paysBasqueLinkLabels[href];
+  return relatedLinkLabels[href] || fallback;
+}
