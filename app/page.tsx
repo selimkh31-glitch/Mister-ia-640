@@ -69,7 +69,7 @@ export default function Home() {
         <Link href="/services/automatisation-ia">Automatisation IA <ArrowUpRight size={16}/></Link>
         <Link href="/services/seo-geo">SEO/GEO <ArrowUpRight size={16}/></Link>
         <Link href="/services/formation-ia">Formation IA <ArrowUpRight size={16}/></Link>
-        <Link href="/pays-basque">Au Pays Basque et à distance <ArrowUpRight size={16}/></Link>
+        <Link href="/pays-basque">Consultant IA au Pays Basque <ArrowUpRight size={16}/></Link>
       </div>
     </section>
   </main>;
