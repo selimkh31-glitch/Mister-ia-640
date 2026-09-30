@@ -1,5 +1,6 @@
 // Search intent titles are distinct from the editorial page headlines.
 export const searchTitles: Record<string, string> = {
+  "/": "Consultant IA en France : sites web, automatisation et formation",
   "/services/creation-site-web": "Site web au Pays Basque dès 299 € HT : SEO et formation",
   "/services": "Services IA pour TPE et PME au Pays Basque",
   "/solutions": "Automatiser devis, relances et emails en entreprise",
@@ -21,7 +22,7 @@ export const searchTitles: Record<string, string> = {
   "/methode": "Notre méthode : audit IA, pilote et automatisation",
 };
 export const searchDescriptions: Record<string, string> = {
-  "/": "Un accompagnement humain au Pays Basque pour votre site internet, votre SEO local et vos outils IA. Avancez avec Selimkhan, à votre rythme.",
+  "/": "Un accompagnement humain partout en France pour votre site internet, votre visibilité locale et vos outils IA. Avancez avec Selimkhan, à votre rythme.",
   "/services/creation-site-web": "Votre site vitrine dès 299 € HT : 10 pages, SEO local, blog et formation. Un accompagnement à Saint-Jean-de-Luz et au Pays Basque, de l’idée à la prise en main.",
   "/services/audit-ia": "Audit IA à Bayonne : diagnostic à 99 € pour TPE et PME du Pays Basque. Un processus prioritaire analysé, un plan concret. Accompagnement Mister IA 64.",
   "/services/seo-geo": "SEO local au Pays Basque : audit du site, contenus, fiche Google et suivi des demandes. Un accompagnement clair pour rendre votre activité plus visible.",
